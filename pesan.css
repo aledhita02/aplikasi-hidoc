@@ -1,0 +1,292 @@
+.selesai-konsul{
+	background: #ff5569;
+	height: 25px;
+	width: 	100%;
+	color: #fff;
+	border:none;
+	border-radius: 3px;
+	box-shadow: 0 3px 0 #df293e;
+	cursor: 	pointer;
+	-webkit-transition: background .2s ease;
+	-moz-transition: background .2s ease;
+	-o-transition: background .2s ease;
+}
+.cari-chat{
+	border-right: 1px solid #f1f1f1;
+
+}
+.kotak-list-chat {
+	height: 600px;
+	background-color: #fff;
+	border-right: 1px solid #f1f1f1;
+	/* z-index: 1; */
+	padding-left: 0;
+	padding-right: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.kotak-list-chat::-webkit-scrollbar {
+	width: 10px;
+}
+
+.kotak-list-chat::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: rgba(0,0,0,.1);
+}
+
+.kotak-list-chat  .oi-delete{
+		color: red;
+		margin-top: -87px;
+		margin-right: 5px;
+		font-size: 18px;
+}
+.kotak-chat {
+	margin-top: 10px;
+}
+
+.chat-form {
+	margin-top: 8px;
+	margin-left: 8px;
+	display: flex;
+	align-items: flex-start;
+
+}
+
+.chat-form textarea {
+	background: #fbfbfb;
+	width: 100%;
+	height: 45px;
+	border:  2px solid #eee;
+	border-radius: 3px;
+	resize: none;
+	padding: 5px;
+	font-size:18px;
+	color:#333;
+	margin-left: 5px;
+}
+
+.chat-form textarea:focus {
+	background: #fff;
+}
+
+.chat-form textarea::-webkit-scrollbar {
+	width: 10px;
+}
+
+.chat-form textarea::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: rgba(0,0,0,.1);
+}
+
+.chat-form button {
+	background: #1ddced;
+	font-size: 20px;
+	height: 45px;
+	color: #fff;
+	border:none;
+	margin:0 10px;
+	border-radius: 3px;
+	box-shadow: 0 3px 0 #0eb2c1;
+	cursor: pointer;
+
+	-webkit-transition: background .2s ease;
+	-moz-transition: background .2s ease;
+	-o-transition: background .2s ease;
+
+}
+
+.chat-form button:hover {
+	background: #13c8d9;
+}
+
+/*CSS UPLOAD FILE*/
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.upload-btn-wrapper button {
+	background: #636363;
+}
+
+.tombolupload {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.upload-btn-wrapper input[type="file"]:hover {
+	cursor: pointer;
+}
+/*Akhir CSS UPLOAD FILE*/
+.bar-pesan {
+	box-shadow: 0 3px 20px rgba(0,0,0,0.16);
+	/* z-index: 2; */
+	position: relative;
+	background: #fff;
+	height: 60px;
+	margin-top: 10px;
+}
+
+
+.list-user {
+	overflow: hidden;
+	border-bottom: 1px solid #f1f1f1;
+	/*background: purple;*/
+}
+
+
+.list-user h1 {
+	font-size: 18px;
+	margin-top:12px;
+	color: #13BFB1;
+	font-weight: 570;
+}
+
+
+.list-user p {
+	margin-top: -5px;
+	/*background: pink;*/
+	color: #636363;
+	height: 18px;
+	overflow: hidden;
+	font-size: 12px;
+	margin-right:15px;
+	margin-bottom: 0;
+}
+
+
+.list-user:hover {
+	background-color: #c6e6e9;
+	transition: 0.5s;
+}
+
+.list-user img {
+	width: 70px;
+	height: 70px;
+	float: left;
+	border-radius: 120px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+	margin-left:15px;
+	margin-top:10px;
+}
+.time {
+	font-size: 10px;
+}
+
+.time-chat {
+	clear: both;
+	color:#838383;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.kotak-isi-chat {
+	/*background: yellow;*/
+	background: #f1f1f1;
+	height: 600px;
+	padding-right: 0;
+	padding-left:0;
+
+}
+
+.kotak-chat-kiri {
+	width: 100%;
+	min-height: 80px;
+	max-height: auto;
+	/*background: blue;*/
+}
+
+.kotak-chat-kanan {
+	width: 100%;
+	min-height: 80px;
+	max-height: auto;
+	/*background: red;*/
+	clear: both;
+}
+
+.kotak-chat-kiri .ava{
+	width:50px;
+	height: 50px;
+	border-radius: 120px;
+	margin: 15px 15px 15px 15px;
+}
+
+.kotak-chat-kanan .ava{
+	width:50px;
+	height: 50px;
+	border-radius: 120px;
+	margin: 15px 15px 15px 15px;
+}
+
+.kotak-chat-kanan .embed-responsive-1by1{
+	width: 100px;
+	height: 100px;
+}
+
+.bubble-chat-kiri {
+	margin-top: 15px;
+	padding: 15px 15px 15px 15px;
+	width: 50%;
+	height: auto;
+	/*background: #1adda4;*/
+	background-color: #13BFB1;
+	border-radius: 12px;
+	margin-bottom:0;
+	color: white;
+	box-shadow: 0 3px 20px rgba(0,0,0,0.16);
+}
+
+
+
+.bubble-chat-kanan {
+	margin-top: 15px;
+	padding: 15px 15px 15px 15px;
+	width: 50%;
+	height: auto;
+	background: #1ddced;
+	border-radius: 12px;
+	margin-bottom:0;
+	color: white;
+	box-shadow: 0 3px 20px rgba(0,0,0,0.16);
+}
+
+
+
+.chatlog {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 540px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.file-photo {
+	max-width: 400px;
+	height: auto;
+}
+
+/*PRIMARY WARNA konsul*/
+.hijau {
+	background-color: #13BFB1;
+}
+
+.text-hijau {
+	color: #13BFB1;
+}

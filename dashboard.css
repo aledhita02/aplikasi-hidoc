@@ -1,0 +1,650 @@
+.edit_profile {
+  box-shadow: 0 3px 20px rgba(0,0,0,0.16);
+  border-radius:10px; 
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+}
+.edit_profile_image {
+
+  width: 260px;
+  height: 260px;
+  border-radius: 140px;   
+}
+
+
+.edit_profile p {
+  margin-top: -5px;
+}
+
+.label_profile {
+  background-color: #13BFB1;
+  text-transform: lowercase;
+  text-align: center; 
+  font-size:  16px;
+  margin-top: 10px;
+}
+
+.nama_profile {
+  margin-bottom:  20px;
+  font-size: 32px;
+}
+
+.tombol_edit_profile {
+  margin-top: 8px;
+}
+.p_class {
+  display: inline-block;
+  margin-left: 5px; 
+}
+
+.table_privacy {
+  margin-top: 30px;
+}
+
+.barThead {
+  background-color: #13BFB1;
+  color: #fff;
+  text-align: center;
+}
+.label_profile {
+    background-color: #13BFB1;
+    text-transform: lowercase;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.icon_kue {
+    width: 25px;
+    height: 25px;
+
+}
+.gambar-bulat {
+    width: 200px;
+    height: 200px;
+    border-radius: 120px;
+    margin-right:   10px;
+    margin-top:   10px;
+
+}
+
+
+.detail-dokter h3{
+    margin-bottom: 0;
+}
+
+.detail-dokter p{
+    font-size:  14px;
+}
+.tombolpost {
+  margin-top: 5px;
+  text-transform: uppercase;
+  border-radius: 40px; 
+  font-weight: bold;
+  font-size: 10px;
+  float: right;
+  margin-right: 10px;
+}
+.recent-post {
+  border: 1px solid #eee;
+   margin-top:  10px;
+}
+
+.recent-post th {
+  height: 30px;
+  padding-left: 10px;
+}
+.recent-post img {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  padding: 5px;
+  border: 1px dashed #ccc;
+  margin-left: 5px;
+  margin-right: 8px;
+  margin-top: 5px;
+  float: left;
+}
+
+.recent-post a{
+  color: black;
+}
+.recent-post h1 {
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: bold;
+  margin-bottom: 0;
+  height: 22px;
+  overflow: hidden;
+}
+
+.recent-post p {
+  font-size: 13px;
+  height: 42px;
+  overflow: hidden;
+}
+
+.detailberita {
+  border: 1px solid #eee;
+  margin-top:  10px;
+}
+
+.detailberita h1{
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 0;
+  /*color: #636363;*/
+}
+
+.detailberita img{
+  margin-bottom: 10px;
+}
+
+/*awal css komen*/
+
+.komen-lawan {
+  width: 100%;
+  border: 1px solid #eee;
+  height: auto;
+  margin-bottom:  5px;
+}
+
+.komentar .col-8 {
+  padding: 0;
+}
+
+.komen-lawan img{
+  width: 60px;
+  height: 60px;
+  border-radius: 120px;
+  float: left;
+  margin: 10px 10px 10px 10px;
+}
+
+.komen-lawan h1{
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.komen-lawan p{
+  height: 70px;
+  overflow:  hidden;
+  padding-right: 10px;
+}
+
+.komen-lawan textarea {
+  margin-top: 15px;
+  width: 70%;
+  resize: none;
+    height: 40px;
+}
+
+/*komenlawan v2*/
+.komen-lawan2 {
+  width: 100%;
+  border: 1px solid #eee;
+  height: 83px;
+  margin-bottom:  5px;
+}
+
+
+
+.komen-lawan2 img{
+  width: 60px;
+  height: 60px;
+  border-radius: 120px;
+  float: left;
+  margin: 10px 10px 10px 10px;
+}
+
+.komen-lawan2 h1{
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.komen-lawan2 p{
+  height: 70px;
+  overflow:  hidden;
+  padding-right: 10px;
+}
+
+.komen-lawan2 textarea {
+  margin-top: 15px;
+  width: 70%;
+  resize: none;
+    height: 40px;
+}
+
+/*Workingspace*/
+.workingspace {
+  margin-top: 80px;
+  text-align : center;
+}
+
+.workingspace img {
+  border-radius: 12px;
+  width: 536px;
+  height: 371px;
+}
+
+.workingspace h3 {
+  font-size: 52px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 30px;
+  color: #636363;
+}
+
+.workingspace h3 span {
+  font-weight: 500;
+}
+
+.workingspace p {
+  font-size: 18px;
+  color: #ACACAC;
+  font-weight: 200;
+  height: 60px;
+  margin: 30px 0 ;
+  overflow: hidden;
+}
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px; 
+  font-weight: bold;
+}
+
+.btn-secondary {
+  background-color: #13BFB1;
+  border-color:#13BFB1;
+}
+
+.titleberita {
+  margin-top: 20px;
+  margin-left: 0px;
+  border-left: 3px solid #13BFB1;
+}
+.titleberita h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #13BFB1;
+}
+
+.maelee {
+  margin-top: 15px;
+}
+
+.pagination {
+  width: 30px;
+  height: 40px;
+}
+
+.berita img {
+  margin-right: 15px;
+  width: 133px;
+  height: 133px;
+}
+
+.berita h3 {
+  color: #636363;
+  font-weight: 600;
+}
+
+.berita p {
+  color: #ACACAC;
+  font-size: 14px;
+  height: 46px;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+
+  .workingspace {
+    text-align: left; 
+  }
+}
+
+.admin_panel {
+  text-align: center;
+  margin-top: 10px; 
+  height: 200px;
+  border-radius: 12px; 
+  padding: 30px;
+  box-shadow: 0 3px 20px rgba(0,0,0,0.16);
+}
+
+.admin_panel h1{
+  margin-top: 20px;
+  font-size: 50px;
+}
+
+.admin_panel p{
+  margin-top: -10px;
+  font-size: 22px;
+  color: #13BFB1;
+}
+
+
+.admin_panel p{
+  margin-top: -10px;
+  font-size: 22px;
+  color: #13BFB1;
+}
+.admin_panel img{
+  margin-left: 10px;
+}
+
+.putih {
+  color: #fff;
+}
+
+.titlepanel {
+  margin-top: 20px;
+  margin-left: 0px;
+  border-left: 3px solid #636363;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 140px;
+}
+
+.titlepanel2 {
+  margin-top: 20px;
+  margin-left: 0px;
+  border-left: 3px solid #636363;
+  margin-bottom: 15px;
+}
+.titlepanel h1 {
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #636363;
+}
+.titlepanel2 h1 {
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #636363;
+}
+
+
+/*PRIMARY WARNA konsul*/
+.hijau {
+  background-color: #13BFB1;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Content
+ */
+
+[role="main"] {
+  padding-top: 48px; /* Space for fixed navbar */
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: #13BFB1;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+/* FORM SENDIRI */
+.chatbox {
+  width: 500px;
+  min-width: 390px;
+  height: 600px;
+  background: yellow;
+  box-shadow: 0 3px #ccc;
+}
+
+.chatlogs {
+  padding: 10px;
+  width: 100%;
+  height: 450px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /*background: #eee;*/
+}
+
+.chatlogs::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chatlogs::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(0,0,0,.1);
+}
+
+.chat {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.chat .user-photo {
+  width: 60px;
+  height: 60px;
+  background: #ccc;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.chat .user-photo img {
+  width: 100%;
+}
+
+.chat .chat-message {
+  /*width: 80%;*/
+  padding: 15px;
+  margin:5px 10px 0;
+  border-radius: 10px;
+  color:#fff;
+  font-size: 18px;  
+}
+
+.lawan .chat-message {
+  width: 40%;
+  background: #1adda4;
+}
+
+.sendiri .chat-message {
+  background: #1ddced;
+  width: 40%;
+  order: -1;
+}
+
+.chat-form {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.chat-form textarea {
+  background: #fbfbfb;
+  width: 75%;
+  height: 50px;
+  border:  2px solid #eee;
+  border-radius: 3px;
+  resize: none;
+  padding: 10px;
+  font-size:18px;
+  color:#333; 
+}
+
+.chat-form textarea:focus {
+  background: #fff;
+}
+
+.chat-form textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chat-form textarea::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(0,0,0,.1);
+}
+
+.chat-form button {
+  background: #1ddced;
+  padding: 5px 15px;
+  font-size: 30px;
+  color: #fff;
+  border:none;
+  margin:0 10px;
+  border-radius: 3px;
+  box-shadow: 0 3px 0 #0eb2c1;
+  cursor: pointer;
+
+  -webkit-transition: background .2s ease;
+  -moz-transition: background .2s ease;
+  -o-transition: background .2s ease;
+
+}
+
+.chat-form button:hover {
+  background: #13c8d9;
+}
+
+@media (min-width: 992px) {
+  .komen-lawan {
+  width: 100%;
+  border: 1px solid #eee;
+  height:auto !important;        /* for IE as it does not support min-height */
+
+}
+
+.komentar .col-8 {
+  padding: 0;
+}
+
+.komen-lawan img{
+  width: 60px;
+  height: 60px;
+  border-radius: 120px;
+  float: left;
+  margin: 10px 10px 10px 10px;
+}
+
+.komen-lawan h1{
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.komen-lawan p{
+  height: 70px;
+  overflow: hidden;
+}
+
+.komen-lawan textarea {
+  margin-top: 15px;
+  width: 85%;
+  resize: none;
+    height: 40px;
+}
+/*Akhir CSS Komen*/
+.edit_profile {
+  text-align: left;
+  }
+}
+
+/* DESKTOP VERSION FULL HD*/
+@media (min-width: 1200px) {
+  .komen-lawan textarea {
+  margin-top: 15px;
+  width: 89%;
+  resize: none;
+    height: 40px;
+  }
+  }
