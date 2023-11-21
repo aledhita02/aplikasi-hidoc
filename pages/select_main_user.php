@@ -47,16 +47,16 @@
         <a href="#berita">
           <div class="col-lg info-panel mr-3 mb-3">
             <img src="img/ic4.png" alt="Security">
-            <h4>Berita Terbaru</h4>
-            <p>Seputar kesehatan.</p>
+            <h4>Artikel Kesehatan</h4>
+            <p>Dapatkan informasi seputar kesehatan terkini</p>
           </div>
         </a>
 
         <a href="#ourdoctor"  >
           <div class="col-lg info-panel mr-3 mb-3">
             <img src="img/ic_doc.png" alt="Security">
-            <h4>Our Doctor</h4>
-            <p>Dokter berpengalaman.</p>
+            <h4>Dokter Kami</h4>
+            <p>Cari nama dokter atau spesialisasi disini</p>
           </div>
         </a>
 
