@@ -2,6 +2,8 @@
 
 echo "hehe";
 
+
+
 if (isset($_GET['id_konsul'])):
   $id_konsul = $_GET['id_konsul'];
     $konsul= new Konsultasi;
