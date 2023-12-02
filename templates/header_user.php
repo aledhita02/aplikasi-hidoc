@@ -32,9 +32,11 @@
   </head>
   <body>
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light ">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top z-2 " style="background-color: aquamarine;">
   <div class="container">
-    <a class="navbar-brand" href="index.php?p=select_main">konsul</a>
+    <a class="navbar-brand" href="index.php?p=select_main">
+      <img src="img/HIDOC.svg" alt="Logo Hidoc" style="width: 8rem; height: 5rem;" >
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -73,29 +75,3 @@
 <!-- Akhir navbar -->
 
 
-<!-- Jumbotron -->
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 ">
-        <h1 class="display-4">Lebih dari <b>100</b> dokter <b>spesialis</b><br /> akan <b>membantu</b> anda</h1>
-
-          <div class="row justify-content-center">
-
-              <button href="#test" class="btn btn-secondary tombol2">Ya, saya mau</button>
-
-              <button href="#test" class="btn btn-outline-light tombol2">Tidak, Terimakasih</button>
-
-          </div>
-      </div>
-
-      <div class="col-sm-4 doctor">
-        <img src="img/doctor.png">
-      </div>
-  </div>
-  </div>
-</div>
-<!-- Akhir jumbotron -->
-
-<!-- Container -->
-<div class="container">
