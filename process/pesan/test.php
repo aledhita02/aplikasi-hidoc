@@ -3,8 +3,8 @@
 echo "hehe";
 
 
-  <?php
-  if (isset($_GET['id_konsul'])):
+
+if (isset($_GET['id_konsul'])):
   $id_konsul = $_GET['id_konsul'];
     $konsul= new Konsultasi;
   $lihatkonsul = $konsul->tampilKonsulById($id_konsul);

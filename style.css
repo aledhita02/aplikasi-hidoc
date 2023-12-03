@@ -1,12 +1,19 @@
-.recent-post {
-  border: 1px solid #eee;
-}
-
 .recent-post th {
+  height: 30px;
+  padding-left: 10px;
   height: 30px;
   padding-left: 10px;
 }
 .recent-post img {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  padding: 5px;
+  border: 1px dashed #ccc;
+  margin-left: 5px;
+  margin-right: 8px;
+  margin-top: 5px;
+  float: left;
   width: 75px;
   height: 75px;
   overflow: hidden;
@@ -36,11 +43,11 @@
   overflow: hidden;
 }
 
-.detailberita {
-  border: 1px solid #eee;
+.turun {
+  margin-top: 8rem;
 }
 
-.detailberita h1 {
+.detailberita .row h1 {
   font-size: 40px;
   font-weight: 400;
   text-transform: uppercase;
@@ -49,8 +56,21 @@
   /*color: #636363;*/
 }
 
-.detailberita img {
+.detailberita .row img {
   margin-bottom: 10px;
+}
+
+.isiartikel {
+  color: 121212;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.potongteks {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 400px;
 }
 
 /*awal css komen*/
@@ -171,8 +191,13 @@ a:hover {
   height: 80px;
   border-radius: 120px;
   margin-left: 17px;
+  width: 80px;
+  height: 80px;
+  border-radius: 120px;
+  margin-left: 17px;
 }
 .putih {
+  color: #fff;
   color: #fff;
 }
 
@@ -185,10 +210,6 @@ a:hover {
   color: #13bfb1;
 }
 /* Navbar */
-.navbar {
-  position: relative;
-  z-index: 1;
-}
 .navbar-brand {
   font-family: viga;
   font-size: 32px;
@@ -207,11 +228,11 @@ a:hover {
 }
 
 .workingspace h3 {
-  font-size: 52px;
-  font-weight: 200;
-  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: capitalize;
   margin-top: 30px;
-  color: #636363;
+  color: #121212;
 }
 
 .workingspace h3 span {
@@ -219,12 +240,23 @@ a:hover {
 }
 
 .workingspace p {
-  font-size: 18px;
-  color: #acacac;
+  font-size: 1.5rem;
+  color: #121212;
   font-weight: 200;
-  height: 60px;
+  height: 50px;
   margin: 30px 0;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 800px;
+}
+
+.workingspace .tombol {
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  max-width: 18rem;
 }
 
 /*Testimonial*/
@@ -301,8 +333,8 @@ a:hover {
 }
 
 .info-panel {
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
-  border-radius: 12px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 1);
+  border-radius: 25px;
   width: 250px;
   height: 250px;
   background-color: white;
@@ -327,6 +359,7 @@ a:hover {
 
 .ashiapp a {
   text-decoration: none;
+  padding: 0.5rem;
 }
 
 .info-panel p {
@@ -338,7 +371,7 @@ a:hover {
 .jumbotron {
   background-image: url(img/bg.jpg);
   background-size: cover;
-  height: 400px;
+  height: 500px;
   text-align: center;
   /*background-position: 0px -40px;*/
   background-repeat: no-repeat;
@@ -349,37 +382,31 @@ a:hover {
 .jumbotron .container {
   z-index: 1;
   position: relative;
-  align-items: center;
 }
 
-.jumbotron h1 {
+/* .jumbotron .display-3 {
   color: white;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  font-weight: 200;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  font-size: 50px;
-  text-align: start;
-  font-weight: 500;
-}
-
-.jumbotron p {
-  color: white;
-  font-weight: 400;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  font-size: 20px;
-  text-align: start;
-}
+  font-size: 35px;
+} */
 
 .jumbotron::after {
   content: '';
   display: block;
-  width: 80%;
+  width: 100%;
   height: 100%;
   background-image: linear-gradient(
     to left,
-    rgba(0, 0, 0, 0),
-    rgba(19, 191, 177, 0.4)
+    rgba(0, 0, 0, 0.4),
+    rgba(19, 191, 177, 0.75)
   );
   position: absolute;
   bottom: 0;
+  z-index: -1;
+  filter: blur(0.5);
 }
 
 /*footer*/
@@ -394,7 +421,7 @@ a:hover {
 /*gambar dokter*/
 
 .doctor img {
-  margin-top: 70px;
+  margin-top: 20px;
   width: 360px;
 }
 
@@ -409,25 +436,28 @@ a:hover {
 }
 
 .berita h3 {
-  color: #636363;
+  color: #121212;
   font-weight: 600;
 }
 
 .berita p {
-  color: #acacac;
+  color: #121212;
   font-size: 14px;
   height: 46px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 800px;
 }
 
 .titleberita {
-  margin-top: 50px;
+  margin-top: 5rem;
   margin-left: 0px;
   border-left: 3px solid #13bfb1;
 }
 .titleberita h1 {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 2.5rem;
   color: #13bfb1;
 }
 
@@ -443,11 +473,20 @@ a:hover {
   color: #636363;
 }
 
+.ourdoctor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.ourdoctortempat {
+  margin-bottom: 20px;
+}
+
 .ourdoctor h4 {
-  margin-top: 8px;
-  color: #636363;
   text-align: center;
-  font-size: 18px;
 }
 
 .ourdoctor p {
@@ -468,12 +507,7 @@ a:hover {
   width: 100%;
   margin-top: -10px;
 }
-.ourdoctortempat {
-  width: 255px;
-  height: 270px;
-  overflow-y: hidden !important;
-  overflow-x: hidden !important;
-}
+
 .ourdoctor img {
   width: 255px; /*ukuran 2x lipat dari tempat*/
   height: 100%;
@@ -486,6 +520,8 @@ a:hover {
 }
 
 /* HALAMAN PILIH DOKTER */
+.ourdoctor2 {
+}
 
 .ourdoctor2 h4 {
   margin-top: 10px;
@@ -676,12 +712,12 @@ a:hover {
 
   .jumbotron {
     margin-top: -75px;
-    height: 641px;
+    height: 1000px;
   }
-  .jumbotron .display-4 {
-    font-size: 40px;
+  .jumbotron p {
     margin-top: 220px;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 2rem;
   }
 
   .workingspace {
@@ -694,7 +730,7 @@ a:hover {
 
   .info-panel {
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
-    border-radius: 12px;
+    border-radius: 25px;
     width: 220px;
     height: 220px;
     margin-top: -110px;
@@ -708,7 +744,7 @@ a:hover {
   }
 
   .doctor img {
-    margin-top: 209px;
+    margin-top: 5rem;
     width: 389px;
   }
 
@@ -802,8 +838,10 @@ a:hover {
   }
 
   .doctor img {
-    margin-top: 133px;
-    width: 389px;
+    margin-top: 13.5rem;
+    margin-left: -5rem;
+    width: 35rem;
+    height: 45rem;
   }
 }
 

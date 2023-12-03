@@ -1,0 +1,293 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Seller"})
+
+    <!-- plugin css -->
+    <link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+
+    @@include("partials/head-css.html")
+
+</head>
+
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    @@include("partials/menu.html")
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+
+                @@include("partials/page-title.html", {"pagetitle": "Ecommerce", "title": "Seller"})
+
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div>
+                                            <h5 class="mb-3">Scheduled Meeting</h5>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="avatar-md">
+                                                    <a class="avatar-title bg-success-subtle text-success font-size-11 rounded" href="#"><i class="mdi mdi-arrow-top-right"></i> 10</a>
+                                                </div>
+                                                <p class="fs-1 mb-0">40</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end card body-->
+                                </div>
+                                <!--end card-->
+                            </div>
+                            <!--end col-->
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div>
+                                            <h5 class="mb-3">Cancelled Meeting</h5>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="avatar-md">
+                                                    <a class="avatar-title bg-danger-subtle text-danger font-size-11 rounded" href="#"><i class="mdi mdi-arrow-bottom-left"></i> 10</a>
+                                                </div>
+                                                <p class="fs-1 mb-0">01</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end card body-->
+                                </div>
+                                <!--end card-->
+                            </div>
+                            <!--end col-->
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div>
+                                            <h5 class="mb-3">Number of won sales</h5>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="avatar-md">
+                                                    <a class="avatar-title bg-info-subtle text-info font-size-20 rounded" href="#"><i class="mdi mdi-currency-usd"></i></a>
+                                                </div>
+                                                <p class="fs-1 mb-0">12</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end card body-->
+                                </div>
+                                <!--end card-->
+                            </div>
+                            <!--end col-->
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div>
+                                            <h5 class="mb-3">Number of sent emails</h5>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="avatar-md">
+                                                    <a class="avatar-title bg-info-subtle text-info font-size-20 rounded" href="#"><i class="mdi mdi-email-outline"></i></a>
+                                                </div>
+                                                <p class="fs-1 mb-0">20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end card body-->
+                                </div>
+                                <!--end card-->
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!--end row-->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title mb-0">Bar Chart</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <canvas id="bar" height="300" data-colors='["--bs-success"]'></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!--end row-->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title mb-0">Top Transection</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <table class="table table-responsive table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Product</th>
+                                                    <th>Avalibility</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Domain</td>
+                                                    <td>120 in stock</td>
+                                                    <td>$29,192</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Market implements</td>
+                                                    <td>10 in stock</td>
+                                                    <td>$19,100</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Local business</td>
+                                                    <td>3 in stock</td>
+                                                    <td>$10,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Salary payments</td>
+                                                    <td>3 in stock</td>
+                                                    <td>$50,000</td>
+                                                </tr>                                                
+                                            </tbody>
+                                        </table>
+                                        <div class="text-center">
+                                        <a href="#" class="btn btn-soft-secondary btn-sm">See more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!--end row-->
+                    </div>
+                    <!--end col-->
+
+                    <div class="col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="">Store</h5>
+                                        <div class="dropdown">
+                                            <a href="javascript:void(0);" class="font-size-18 text-muted dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="mdi mdi-dots-vertical"></i></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div>
+                                            <a href="javascript:void(0);" class="text-primary display-5"><i class="mdi mdi-store"></i></a>
+                                            <h5 class="font-size-18">Anaya store</h5>
+                                        </div>
+                                        <div class="text-warning font-size-20">
+                                            <i class="mdi mdi-star"></i>
+                                            <i class="mdi mdi-star"></i>
+                                            <i class="mdi mdi-star"></i>
+                                            <i class="mdi mdi-star"></i>
+                                            <i class="mdi mdi-star-outline"></i>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex align-items-baseline justify-content-center">
+                                                <span class="float-start p-2">Great</span>
+                                                <div class="progress progress-sm flex-grow-1">
+                                                    <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 47%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <span class="float-end ms-2 p-2">47%</span>
+                                            </div>
+                                            <div class="d-flex align-items-baseline justify-content-center">
+                                                <span class="float-start p-2">Good</span>
+                                                <div class="progress progress-sm flex-grow-1">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-label="Success example" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <span class="float-end ms-2 p-2">35%</span>
+                                            </div>
+                                            <div class="d-flex align-items-baseline">
+                                                <span class="float-start me-3 p-2">Ok</span>
+                                                <div class="progress progress-sm flex-grow-1">
+                                                    <div class="progress-bar bg-warning" role="progressbar" aria-label="Success example" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <span class="float-end ms-2 p-2">20%</span>
+                                            </div>
+                                            <div class="d-flex align-items-baseline">
+                                                <span class="float-start me-2 p-2">Bad</span>
+                                                <div class="progress progress-sm flex-grow-1">
+                                                    <div class="progress-bar bg-danger" role="progressbar" aria-label="Success example" style="width: 08%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                                <span class="float-end ms-2 p-2">08%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end card body-->
+                        </div>
+                        <!--end card-->
+
+                        <div class="card">
+
+                            <div class="card-body">
+                                <div>
+                                    <div class="border-bottom border-light pb-2">
+                                        <h5 class="card-title">Money Status</h5>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="text-muted mb-0">Total budget</p>
+                                            <span class="text-muted">$50,000</span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <canvas id="doughnut" height="260" data-colors='["--bs-info","--bs-light"]'></canvas>
+                                        <div class="text-center mt-4">
+                                            <a href="#" class="btn btn-soft-info btn-sm border-0">View full report</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end card body-->
+                        </div>
+                        <!--end card-->
+                    </div>
+                    <!--end col-->
+                </div>
+                <!--end row-->
+
+            </div> <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+
+        @@include("partials/footer.html")
+    </div>
+    <!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+@@include("partials/right-sidebar.html")
+
+@@include("partials/vendor-scripts.html")
+
+<!-- Plugins js-->
+
+<!-- Chart JS -->
+<script src="assets/libs/chart.js/Chart.bundle.min.js"></script>
+
+<!-- chartjs init -->
+<script src="assets/js/pages/seller.init.js"></script>
+
+<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
