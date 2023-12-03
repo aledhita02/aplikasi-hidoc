@@ -23,18 +23,14 @@
     <link rel="stylesheet" href="csslogin/styles.css"> <!-- Resource style -->
     <link rel="stylesheet" href="csslogin/demo.css"> <!-- Demo style -->
 
-
-
     <link href="open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
-
-
 
   </head>
   <body>
     <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light ">
   <div class="container">
-    <a class="navbar-brand" href="index.php?p=select_main">konsul</a>
+    <a class="navbar-brand" href="index.php?p=select_main">HiDoc</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -78,17 +74,9 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-8 ">
-        <h1 class="display-4">Lebih dari <b>100</b> dokter <b>spesialis</b><br /> akan <b>membantu</b> anda</h1>
-
-          <div class="row justify-content-center">
-
-              <button href="#test" class="btn btn-secondary tombol2">Ya, saya mau</button>
-
-              <button href="#test" class="btn btn-outline-light tombol2">Tidak, Terimakasih</button>
-
-          </div>
+        <h1 class= "display-3 text-start" style=" margin-top : 200px; "><b>Solusi Kesehatan Terpercaya Untuk Anda</b></h1>
+        <p class = "mt-2"> Chat Dokter, Artikel Kesehatan semuanya ada di HiDoc</p>
       </div>
-
       <div class="col-sm-4 doctor">
         <img src="img/doctor.png">
       </div>
