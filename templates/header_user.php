@@ -23,11 +23,7 @@
     <link rel="stylesheet" href="csslogin/styles.css"> <!-- Resource style -->
     <link rel="stylesheet" href="csslogin/demo.css"> <!-- Demo style -->
 
-
-
     <link href="open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
-
-
 
   </head>
   <body>
