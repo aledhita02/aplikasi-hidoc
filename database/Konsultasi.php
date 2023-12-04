@@ -20,14 +20,14 @@
 
     }
 
-    public function hitungKonsultasiButtonDokter($id){
-        $sql="SELECT * FROM tkonsultasi WHERE id_dokter=?  ";
-        $stmt = $this->pdo->prepare($sql);
-        $stmt->execute([$id]);
-        $count = $stmt->rowCount();
-        return $count;
+    // public function hitungKonsultasiButtonDokter($id){
+    //     $sql="SELECT * FROM tkonsultasi WHERE id_dokter=?  ";
+    //     $stmt = $this->pdo->prepare($sql);
+    //     $stmt->execute([$id]);
+    //     $count = $stmt->rowCount();
+    //     return $count;
 
-    }
+    // }
 
 
 
