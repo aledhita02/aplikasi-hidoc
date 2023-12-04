@@ -2,9 +2,6 @@
 <!-- Footer -->
 <div class="row footer">
   <div class="col text-center">
-    <p>2018 &copy; All Right Reserved Apps By Kelompok Keong | Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a>
-    </p>
-
   </div>
 </div>
 <!-- Akhir footer -->
@@ -14,7 +11,7 @@
 
 
         <div class="cd-signin-modal js-signin-modal"> <!-- this is the entire modal form, including the background -->
-        <div class="cd-signin-modal__container"> <!-- this is the container wrapper -->
+        <div class="cd-signin-modal__container z-3 "> <!-- this is the container wrapper -->
             <ul class="cd-signin-modal__switcher js-signin-modal-switcher js-signin-modal-trigger">
                 <li><a href="#0" data-signin="login" data-type="login">Sign in</a></li>
                 <li><a href="#0" data-signin="signup" data-type="signup">New account</a></li>
@@ -44,7 +41,6 @@
                         <input class="cd-signin-modal__input cd-signin-modal__input--full-width" type="submit" value="Login">
                     </p>
                 </form>
-                <br><center><p>Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a></p></center>
                 
 
                 <p class="cd-signin-modal__bottom-message js-signin-modal-trigger"><a href="#0" data-signin="reset">Forgot your password?</a></p>
