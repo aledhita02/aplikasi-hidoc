@@ -18,10 +18,10 @@ function isSafePage($page){
 
 $allowedPages = [
   'dokter' => [
-    'default_page' => 'select_main_dokter',
+    'default_page' => 'pesan_proses',
     'edit_profil',
     'pesan_pending',
-    'pesan_proces',
+    'pesan_proses',
     'pesan_history',
     ''
   ],

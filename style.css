@@ -714,7 +714,8 @@ a:hover {
 	}
 
 	.kategori {
-		text-align: left;
+		text-align: center;
+		padding: 50px;
 	}
 
 	.info-panel {
