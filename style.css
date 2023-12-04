@@ -77,8 +77,8 @@
 
 .komen-lawan {
   width: 100%;
-  border: 1px solid #eee;
-  height: 97px;
+  border: 3px solid #121212;
+  height: 8rem;
   margin-bottom: 5px;
 }
 
@@ -109,7 +109,7 @@
 
 .komen-lawan textarea {
   margin-top: 15px;
-  width: 70%;
+  width: 50%;
   resize: none;
   height: 40px;
 }
@@ -117,9 +117,9 @@
 /*komenlawan v2*/
 .komen-lawan2 {
   width: 100%;
-  border: 1px solid #eee;
-  height: 83px;
-  margin-bottom: 5px;
+  border: 3px solid #121212;
+  height: 8rem;
+  margin-bottom: 1rem;
 }
 
 .komen-lawan2 img {
@@ -132,20 +132,21 @@
 
 .komen-lawan2 h1 {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .komen-lawan2 p {
   height: 70px;
   overflow: hidden;
-  padding-right: 10px;
+  padding-top: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .komen-lawan2 textarea {
   margin-top: 15px;
-  width: 70%;
+  width: 50%;
   resize: none;
   height: 40px;
 }
@@ -306,13 +307,12 @@ a:hover {
   font-weight: bold;
 }
 .tombolpost {
-  margin-top: 5px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   border-radius: 40px;
   font-weight: bold;
-  font-size: 10px;
-  float: right;
-  margin-right: 10px;
+  font-size: 1.3rem;
+  width: 7rem;
+  height: 3rem;
 }
 .tombol2 {
   margin-top: 10px;
@@ -764,7 +764,9 @@ a:hover {
 
   .komen-lawan {
     width: 100%;
-    border: 1px solid #eee;
+    border: 3px solid #121212;
+    height: 8rem;
+    margin-bottom: 1rem;
     height: auto !important; /* for IE as it does not support min-height */
   }
 
@@ -794,7 +796,7 @@ a:hover {
 
   .komen-lawan textarea {
     margin-top: 15px;
-    width: 85%;
+    width: 50%;
     resize: none;
     height: 40px;
   }
@@ -821,9 +823,9 @@ a:hover {
 @media (min-width: 1200px) {
   .komen-lawan textarea {
     margin-top: 15px;
-    width: 88%;
+    width: 80%;
     resize: none;
-    height: 40px;
+    height: 150px;
   }
 
   .info-panel {

@@ -73,57 +73,61 @@
 
 	<br />
 
+	<!--  -->
 	<div class="container">
-		<div class="row komentar d-flex justify-content-center mt-5">
-			<div class="col-8">
-				<?php
-				if (isset($_SESSION['role'])) {
-					$nama = $_SESSION['nama'];
-					$role = $_SESSION['role'];
-				?>
-					<!-- <form action="process/komentar/tambahKomentar_proses.php" method="post" enctype="multipart/form-data"> -->
-					<div class="komen-lawan">
-						<img src="<?= $_SESSION['foto'] ?>">
-						<div class="form-group">
-							<input type="hidden" name="nama" value="<?php echo $nama; ?>" id="nama">
-							<textarea class="form-control" name="komentar" maxlength="120" id="text" required></textarea>
-							<input type="hidden" name="post" value="<?php echo $data['id']; ?>" id="post">
-							<span class="badge badge-secondary" id="count_message"></span>
-							<button type="button" class="btn btn-secondary tombolpost" id="sendkomentar">Post</button>
-						</div>
-					</div>
-					<!-- </form> -->
-	
-				<?php
-	
-				} else {
-				?><h3 class="text-hijau">Silahkan login untuk berkomentar</h3><?php
-																}
-																	?>
-				<div id="kolomKomentar">
-	
-	
-					<?php
-					$post = $_GET['id'];
-					$komentar = new Komentar;
-	
-					$data2 = $komentar->tampilKomentarByPost($post);
-					foreach ($data2 as $row2) :
-					?>
-	
-	
-						<div class="komen-lawan2">
-							<img src="<?= $row2['foto_user'] ?>">
-							<h1 class="text-hijau"><?= $row2['nama'] ?></h1>
-							<p><?= $row2['komentar'] ?></p>
-						</div>
-					<?php
-					endforeach;
-					?>
-	
-				</div>
+		<div class="col-8 shadow p-5 rounded">
+			<div style="font-weight: 500; font-size: 2rem;">
+				Komentar :
 			</div>
-	
+			<div class="row komentar d-flex justify-content-start mt-5">
+				<div class="col-12">
+					<?php
+					if (isset($_SESSION['role'])) {
+						$nama = $_SESSION['nama'];
+						$role = $_SESSION['role'];
+					?>
+						<!-- <form action="process/komentar/tambahKomentar_proses.php" method="post" enctype="multipart/form-data"> -->
+						<div class="komen-lawan">
+							<img src="<?= $_SESSION['foto'] ?>">
+							<div class="form-group text-center">
+								<div class="row">
+									<input type="hidden" name="nama" value="<?php echo $nama; ?>" id="nama">
+									<textarea class="form-control" name="komentar" maxlength="120" id="text" required></textarea>
+									<input type="hidden" name="post" value="<?php echo $data['id']; ?>" id="post">
+									<span class="badge badge-secondary ml-3 px-3" style= "height: 2rem; margin-top: 4.5rem;" id="count_message"></span>
+								</div>
+									<button type="button" class="btn btn-secondary tombolpost mt-3" id="sendkomentar">Posting</button>
+							</div>
+						</div>
+						<!-- </form> -->
+		
+					<?php
+		
+					} else {
+					?><h3 class="text-hijau">Silahkan login untuk berkomentar</h3><?php
+																	}
+																		?>
+					<div id="kolomKomentar">
+						<?php
+						$post = $_GET['id'];
+						$komentar = new Komentar;
+		
+						$data2 = $komentar->tampilKomentarByPost($post);
+						foreach ($data2 as $row2) :
+						?>
+							<div class="komen-lawan2">
+								<img src="<?= $row2['foto_user'] ?>">
+								<h1 class="text-hijau"><?= $row2['nama'] ?></h1>
+								<p><?= $row2['komentar'] ?></p>
+							</div>
+						<?php
+						endforeach;
+						?>
+		
+					</div>
+				</div>
+		
+			</div>
 		</div>
 	</div>
 
