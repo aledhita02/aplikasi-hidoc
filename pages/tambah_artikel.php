@@ -1,9 +1,9 @@
-<?php //if (!isset($_SESSION['role'])): ?>
+<?php if (!isset($_SESSION['role'])): ?>
   <script>
-    // window.location = 'index.php';
+    window.location = 'index.php';
 
   </script>
-<?php //endif; ?>
+<?php endif; ?>
 <br />
 <!-- tempat ketik berita -->
 <!-- <div class="modal fade" id="tambah_artikel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -16,7 +16,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div> -->
-      <!-- <div class="modal-body">
+      <div class="modal-body">
         <form action="process/artikel/tambahArtikel_proses.php" method="post" enctype="multipart/form-data">
           <div class="form-group">
             <label for="judulartikel">Judul Artikel :</label>
@@ -35,17 +35,17 @@
         </form>
         <!-- akhir tempat berita -->
 
-<?php
-  include 'database/Artikel.php';
+        <?php
+        include 'database/Artikel.php';
 
- ?>
+        ?>
 
-  <!-- Berita -->
+        <!-- Berita -->
 
-  <!-- Akhir berita -->
+        <!-- Akhir berita -->
 
         <!-- awal pagination -->
-        <!-- <div class="row justify-content-md-center mt-5">
+        <div class="row justify-content-md-center mt-5">
           <div class="col-md-auto">
 
           </div>
@@ -53,10 +53,10 @@
       </div>
     </div>
   </div>
-</div> --> -->
+</div>
 
 <!-- akhir pagination -->
 <script src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
 <script>
-  //autosize(document.getElementById("isiartikel"));
+  autosize(document.getElementById("isiartikel"));
 </script>

@@ -56,8 +56,7 @@
 		{
 			$sql = "SELECT * FROM tartikel";
 			$stmt = $this->pdo->query($sql);
-			$stmt->execute();
-			return $stmt->fetchAll(PDO::FETCH_ASSOC);
+			return $stmt;
 		}
 
 
