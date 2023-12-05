@@ -28,7 +28,7 @@
   </head>
   <body>
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top z-2 " style="background-color: aquamarine;">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top z-2" style="background-color: aquamarine;">
   <div class="container">
     <a class="navbar-brand" href="index.php?p=select_main">
       <img src="img/HIDOC.svg" alt="Logo Hidoc" style="width: 8rem; height: 5rem;" >

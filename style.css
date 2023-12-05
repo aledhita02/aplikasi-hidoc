@@ -431,8 +431,8 @@ a:hover {
 
 .berita img {
   margin-right: 15px;
-  width: 133px;
-  height: 133px;
+  width: 7.5rem;
+  height: 7.5rem;
 }
 
 .berita h3 {
@@ -509,9 +509,11 @@ a:hover {
 }
 
 .ourdoctor img {
-  width: 255px; /*ukuran 2x lipat dari tempat*/
-  height: 100%;
+  width: 250px;
+  height: 250px;
+  object-fit: fill;
 }
+
 .nextdoc {
   width: 25px;
   height: 25px;
@@ -520,8 +522,6 @@ a:hover {
 }
 
 /* HALAMAN PILIH DOKTER */
-.ourdoctor2 {
-}
 
 .ourdoctor2 h4 {
   margin-top: 10px;
