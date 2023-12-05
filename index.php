@@ -21,7 +21,7 @@ $allowedPages = [
     'default_page' => 'select_main_dokter',
     'edit_profil',
     'pesan_pending',
-    'pesan_proces',
+    'pesan_proses',
     'pesan_history',
     ''
   ],
@@ -68,7 +68,7 @@ if(isset($_SESSION['role'])){
       include 'pages/'.$page .'.php';
       // echo $defaultPageRole; 
     } else {
-      header("Location: http://localhost:8080/testya/index.php?p=" . $allowedPages[$_SESSION['role']]['default_page']);
+      header("Location: http://localhost:80/app-hidoc/index.php?p=" . $allowedPages[$_SESSION['role']]['default_page']);
       exit();
     }
   
@@ -77,7 +77,7 @@ if(isset($_SESSION['role'])){
     include 'pages/' . $page . '.php';
 
   } else {
-    header("Location: http://localhost:8080/testya/index.php");
+    header("Location: http://localhost:80/app-hidoc/index.php");
     exit();
   }
 }

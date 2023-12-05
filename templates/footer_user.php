@@ -1,13 +1,13 @@
 <!-- Footer -->
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container-fluid mt-5">
+<div class="container-fluid mt-5" id="footer">
   <!-- Footer -->
   <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-between p-4 text-white" style="background-color: #21D192">
       <!-- Left -->
       <div class="me-5">
-        <span>Get connected with us on social networks:</span>
+        <span>Tentang Kami</span>
       </div>
       <!-- Left -->
 
@@ -25,12 +25,6 @@
         <a href="" class="text-white me-4">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-github"></i>
-        </a>
       </div>
       <!-- Right -->
     </section>
@@ -47,9 +41,7 @@
             <h6 class="text-uppercase fw-bold">HiDoc</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
             <p>
-              Here you can use rows and columns to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
+              Hidoc, solusi kesehatan digital yang lengkap dan terjangkau, memungkinkan Anda untuk mengakses layanan kesehatan berkualitas tanpa perlu meninggalkan rumah.
             </p>
           </div>
           <!-- Grid column -->
@@ -60,16 +52,10 @@
             <h6 class="text-uppercase fw-bold">Products</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
             <p>
-              <a href="#!" class="text-dark">MDBootstrap</a>
+              <a href="#!" class="text-dark">Chat Dokter</a>
             </p>
             <p>
-              <a href="#!" class="text-dark">MDWordPress</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">BrandFlow</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">Bootstrap Angular</a>
+              <a href="#!" class="text-dark">Artikel Kesehatan</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -80,16 +66,16 @@
             <h6 class="text-uppercase fw-bold">Useful links</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
             <p>
-              <a href="#!" class="text-dark">Your Account</a>
+              <a href="#!" class="text-dark">Blog</a>
             </p>
             <p>
-              <a href="#!" class="text-dark">Become an Affiliate</a>
+              <a href="#!" class="text-dark">FAQ</a>
             </p>
             <p>
-              <a href="#!" class="text-dark">Shipping Rates</a>
+              <a href="#!" class="text-dark">Kebijakan Privasi</a>
             </p>
             <p>
-              <a href="#!" class="text-dark">Help</a>
+              <a href="#!" class="text-dark">S&K</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -99,10 +85,10 @@
             <!-- Links -->
             <h6 class="text-uppercase fw-bold">Contact</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+            <p><i class="fas fa-home mr-3"></i> Bekasi,Jati Asih, BKS-17426</p>
+            <p><i class="fas fa-envelope mr-3"></i> HiDoc@mail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 62 888 566 777</p>
+            <p><i class="fas fa-print mr-3"></i> + 62 213 567 831</p>
           </div>
           <!-- Grid column -->
         </div>
@@ -124,7 +110,6 @@
 <!-- Akhir footer -->
 
 </div>
-
 <!-- Akhir container -->
 
 
@@ -234,6 +219,14 @@
 <script src="jslogin/main.js"></script> <!-- Resource JavaScript -->
 
 <script src="myjs.js"></script>
+
+
+
+
+
+
+
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
