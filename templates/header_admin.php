@@ -6,20 +6,39 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
- 
+<head>
 
 
-    <title>Dokter</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>Dokter</title>
+
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
-    <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
-  </head>
+<!-- Custom styles for this template -->
+<link href="dashboard.css" rel="stylesheet">
 
+<!-- App favicon -->
+<link rel="shortcut icon" href="plugin/dist/assets/images/favicon.ico">
+
+<!-- plugin css -->
+<link href="plugin/dist/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet"
+    type="text/css" />
+
+<!-- preloader css -->
+<link rel="stylesheet" href="plugin/dist/assets/css/preloader.min.css" type="text/css" />
+
+<!-- Bootstrap Css -->
+<link href="plugin/dist/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+
+<!-- Icons Css -->
+<link href="plugin/dist/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+<!-- App Css-->
+<link href="plugin/dist/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
 <body>
     <header id="page-topbar">
         <div class="navbar-header bg-success">
