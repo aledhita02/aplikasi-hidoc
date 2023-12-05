@@ -19,13 +19,15 @@
 <div class="row">
   <div class="col-12">
     <div class="row d-flex justify-content-start ashiapp" style="margin-top: -20rem; margin-left: 12rem;">
+
+      <!-- Panel Chat Dokter -->
       <?php if (isset($_SESSION['role'])) : ?>
         <?php if ($_SESSION['role'] == 'user') : ?>
           <a href="index.php?p=select_chat" class="page-scroll">
             <div class="col-lg info-panel mr-3 mb-3">
               <img src="img/icon22.png" alt="ChatDokter">
               <h4>CHAT DOKTER</h4>
-              <p>Tanyakan kepada dokter ahli.</p>
+              <p class="text-dark lead font-weight-normal">Tanyakan semua gejala penyakit anda kepada dokter ahli kami.</p>
             </div>
           </a>
         <?php endif; ?>
@@ -39,6 +41,7 @@
         </a>
       <?php endif; ?>
 
+      <!-- Panel Artikel -->
       <a href="#berita">
         <div class="col-lg info-panel mr-3 mb-3">
           <img src="img/ic4.png" alt="Security">
@@ -47,6 +50,7 @@
         </div>
       </a>
 
+      <!-- Panel Dokter Kami -->
       <a href="#ourdoctor">
         <div class="col-lg info-panel mr-3 mb-3">
           <img src="img/ic_doc.png" alt="Security">
@@ -59,6 +63,7 @@
   </div>
 </div>
 <!-- Akhir info panel -->
+
 <!-- Working space -->
 <div class="container-fluid" id="berita">
   <div class="row titleberita ml-5">
