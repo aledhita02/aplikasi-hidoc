@@ -15,7 +15,6 @@
   </div>
 
 
-
       <table class="table table_spesialis text-center table-striped">
         <thead class="thead hijau putih ">
           <tr>
@@ -31,8 +30,6 @@
             $i= 1;
             foreach ($tampilKonsul as $row):
           ?>
-
-
           <tr>
             <td class="align-middle"><?= $i; ?></td>
             <td class="align-middle"><img class="avatar" src="<?= $row['foto_user'] ?>"></td>
@@ -43,12 +40,7 @@
                  |
                 <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#tolak_user" data-whatever="@getbootstrap">Tolak</button>
             </td>
-
-            <?php endforeach; ?>
-
           </tr>
-
-
 
           <!-- Modal Delete Dokter -->
           <div class="modal fade" id="tolak_user" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -71,7 +63,7 @@
             </div>
           </div>
           <!-- Akhir Modal Delete Dokter -->
-
+          <?php endforeach; ?>
         </tbody>
       </table>
 <!-- akhirtable Dokter-->
