@@ -8,17 +8,13 @@ include 'database/User.php';
 include 'database/Pesan.php';
 
 
-
-
-include 'templates/header.php';
-
 function isSafePage($page){
   return !preg_match('/\.\.\//', $page);
 }
 
 $allowedPages = [
   'dokter' => [
-    'default_page' => 'select_main_dokter',
+    'default_page' => 'pesan_proses',
     'edit_profil',
     'pesan_pending',
     'pesan_proses',
@@ -62,22 +58,26 @@ if(!isset($_GET['p'])){
 } else {
   $page = $_GET['p'];
 }
+// print_r($_SESSION['role']);
 
 if(isset($_SESSION['role'])){
   if(isset($allowedPages[$_SESSION['role']]) && in_array($page, $allowedPages[$_SESSION['role']]) && isSafePage($page) ){
-      include 'pages/'.$page .'.php';
+    include 'templates/header.php';
+
+    include 'pages/'.$page .'.php';
       // echo $defaultPageRole; 
     } else {
-      header("Location: http://localhost:80/app-hidoc/index.php?p=" . $allowedPages[$_SESSION['role']]['default_page']);
+      header("Location: http://localhost:8080/testya/index.php?p=" . $allowedPages[$_SESSION['role']]['default_page']);
       exit();
     }
   
 } else {
   if (in_array($page, $allowedPagesGuest['default_guest']) && isSafePage($page)) {
-    include 'pages/' . $page . '.php';
+  include 'templates/header.php';
+  include 'pages/' . $page . '.php';
 
   } else {
-    header("Location: http://localhost:80/app-hidoc/index.php");
+    header("Location: http://localhost:8080/testya/index.php");
     exit();
   }
 }
