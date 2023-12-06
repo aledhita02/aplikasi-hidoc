@@ -3,7 +3,7 @@
   <div class="w-100">
     <div class="row">
       <div class="col-sm-8 ">
-        <h1 class="display-3 text-start font-weight-normal shadow-sm " style=" margin-top : 200px; font-size: 5rem; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);"><b>Solusi Kesehatan Terpercaya <br>Untuk Anda</b></h1>
+        <h1 style=" margin-top : 200px; font-size: 5rem; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);"><b>Solusi Kesehatan Terpercaya <br>Untuk Anda</b></h1>
         <p class="mt-5 text-light" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);"> Chat Dokter, Artikel Kesehatan semuanya ada di HiDoc</p>
       </div>
       <div class="col-sm-4 doctor ">
