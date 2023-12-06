@@ -7,6 +7,7 @@ include 'database/Konsultasi.php';
 include 'database/User.php';
 include 'database/Pesan.php';
 
+$baseURL = "//" . $_SERVER['HTTP_HOST'] . dirname($_SERVER['REQUEST_URI']);
 
 function isSafePage($page){
   return !preg_match('/\.\.\//', $page);
@@ -67,7 +68,7 @@ if(isset($_SESSION['role'])){
     include 'pages/'.$page .'.php';
       // echo $defaultPageRole; 
     } else {
-      header("Location: http://localhost:8080/testya/index.php?p=" . $allowedPages[$_SESSION['role']]['default_page']);
+      header("Location: $baseURL/index.php?p=" . $allowedPages[$_SESSION['role']]['default_page']);
       exit();
     }
   
@@ -77,7 +78,7 @@ if(isset($_SESSION['role'])){
   include 'pages/' . $page . '.php';
 
   } else {
-    header("Location: http://localhost:8080/testya/index.php");
+    header("Location: $baseURL/index.php");
     exit();
   }
 }
