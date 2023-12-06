@@ -7,9 +7,9 @@
 <?php
 include 'database/Artikel.php';
 
-$id = $_GET['id'];
-$user = new Artikel;
-$data_edit = $user->tampilArtikelById($id);
+// $id = $_GET['id'];
+// $user = new Artikel;
+// $data_edit = $user->tampilArtikelById($id);
 ?>
 
 <div class="main-content">
@@ -46,9 +46,37 @@ $data_edit = $user->tampilArtikelById($id);
               data-target="#edit_artikel_<?= $row['id'] ?>" data-whatever="@getbootstrap">
               Edit Artikel
             </button>
-            <a href="index.php?p=../process/artikel/deleteArtikel_proses&id=<?= $row['id'] ?>"><button
-                class="btn btn-outline-danger">Hapus</button></a>
+            <button type="button" class="btn btn-outline-danger" data-toggle="modal"
+              data-target="#delete_artikel_<?= $row['id'] ?>" data-whatever="@getbootstrap">
+              Delete Artikel
+            </button>
+            
+            <!-- <a href="process/artikel/deleteArtikel_proses&id=< //$row['id'] "><button class="btn btn-outline-danger">Hapus</button></a> -->
           </div>
+
+          <!-- Modal Delete artikel -->
+          <div class="modal fade" id="delete_artikel_<?= $row['id'] ?>" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Delete Artikel</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>anda yakin ingin menghapus</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="process/artikel/deleteArtikel_proses.php?id=<?= $row['id'] ?>"><button
+                        type="button" class="btn btn-danger">Delete</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Akhir Modal Delete artikel -->
 
           <!-- Modals Edit Artikel -->
           <div class="modal fade" id="edit_artikel_<?= $row['id'] ?>" tabindex="-1" role="dialog"
@@ -65,9 +93,9 @@ $data_edit = $user->tampilArtikelById($id);
                   <form action="process/artikel/editArtikel_proses.php" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                       <label for="judulartikel">Judul Artikel :</label>
-                      <input type="text" name="judul" value="<?= $row['judul'] ?>" placeholder="Judul Artikel"
-                        class="form-control" id="judulartikel">
+                      <input type="text" name="judul" value="<?= $row['judul'] ?>" placeholder="Judul Artikel" class="form-control" id="judulartikel">
                     </div>
+                    
                     <div class="form-group">
                       <label for="isiartikel">Isi Artikel :</label>
                       <input type="text" class="form-control" name="artikel" value="<?= $row['artikel'] ?>"
@@ -78,7 +106,7 @@ $data_edit = $user->tampilArtikelById($id);
                       <label for="pict">Ubah Gambar :</label>
                       <input type="file" name="foto" class="form-control h-100" id="pict">
                     </div>
-                    <input type="hidden" name="id" value="<?= $id ?>">
+                    <input type="hidden" name="id" value="<?= $row['id'] ?>">
                     <input type="hidden" name="fotolama" value="<?= $row['foto'] ?>">
                     <button class="btn btn-outline-primary mb-2 mt-3" data-toggle="modal" data-target="#edit_artikel"
                       data-whatever="@getbootstrap">Edit Artikel</button>
