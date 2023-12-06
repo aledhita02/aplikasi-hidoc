@@ -1,6 +1,6 @@
 <!-- Footer -->
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container-fluid mt-5" id="footer">
+<div class="mt-5" id="footer">
   <!-- Footer -->
   <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
     <!-- Section: Social media -->
