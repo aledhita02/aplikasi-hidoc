@@ -482,10 +482,6 @@ a:hover {
   width: 100%;
 }
 
-.ourdoctortempat {
-  margin-bottom: 20px;
-}
-
 .ourdoctor h4 {
   text-align: center;
 }
@@ -549,9 +545,11 @@ a:hover {
   overflow-y: hidden !important;
   overflow-x: hidden !important;
 }
+
 .ourdoctor2 img {
-  width: 255px; /*ukuran 2x lipat dari tempat*/
-  height: 100%;
+  width: 255px;
+  height: 255px;
+  object-fit: fill;
 }
 
 .edit_profile {
