@@ -327,7 +327,7 @@ x sigin/signup popup
 }
 
 .cd-signin-modal__input.cd-signin-modal__input--has-border {
-  border: 1px solid #d2d8d8;
+  border: 1px solid #d2d8d2;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -347,7 +347,7 @@ x sigin/signup popup
 .cd-signin-modal__input[type='submit'] {
   padding: 16px 0;
   cursor: pointer;
-  background: #13bfb1;
+  background: #39b65f;
   color: #fff;
   font-weight: bold;
   border: none;
@@ -361,7 +361,7 @@ x sigin/signup popup
 .cd-signin-modal__input[type='submit']:hover,
 .cd-signin-modal__input[type='submit']:focus {
   transition: 0.5s;
-  background: #1ddced;
+  background: #548538;
   outline: none;
 }
 

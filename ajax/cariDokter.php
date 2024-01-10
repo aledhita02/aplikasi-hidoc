@@ -28,10 +28,10 @@ $tampilDokter = $dokter->cariDokter($keyword);
                 <p>
                   <?= $row['nama_spesialisasi'] ?>
                 </p>
-                <h5 class="my-0">
-                  <!-- <span class="text-muted me-2"><del>$500</del></span> -->
+                <!-- <h5 class="my-0">
+                  <span class="text-muted me-2"><del>$500</del></span>
                   <b>$450</b>
-                </h5>
+                </h5> -->
               </div>
             </div>
           </div>
