@@ -149,7 +149,7 @@ if (isset($_GET['kode'])) {
                 <!-- Modal konsul -->
                 <div class="modal fade" id="form_konsul_<?= $row['id_user'] ?>" tabindex="-1" role="dialog"
                   aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title">Konsul</h5>

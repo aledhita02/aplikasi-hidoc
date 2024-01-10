@@ -46,7 +46,7 @@ $spesialis = $spesial->tampilSpesialisasi();
             </div>
 
             <div class="card-body">
-              <table id="datatable" class="table table-bordered dt-responsive nowrap w-100">
+              <table id="datatable" class="table table-bordered table-hover dt-responsive nowrap w-100">
                 <thead class="thead hijau putih">
                   <tr>
                     <th>No</th>

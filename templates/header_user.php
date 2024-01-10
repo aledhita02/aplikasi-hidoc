@@ -101,7 +101,7 @@
           <?php endif; ?>
 
         <?php else: ?>
-          <a class="nav-item btn btn-primary tombol" href="#" data-signin="login">Login</a>
+          <a class="nav-item btn btn-primary bg-secondary tombol" href="#" data-signin="login">Login</a>
         <?php endif; ?>
 
 

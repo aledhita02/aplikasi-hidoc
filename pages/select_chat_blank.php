@@ -120,7 +120,7 @@
                  </div>
                  <div class="modal-footer">
                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                   <a href="../process/konsul/gantiStatusFinishUser_proses.php?id=<?= $row['id_konsultasi'] ?>"><button type="button" class="btn btn-danger">Delete</button></a>
+                   <a href="../process/konsul/gantiStatusFinishUser_proses.php?id=<?= $row['id_konsultasi'] ?>"><button type="button" class="btn btn-danger">Selesai</button></a>
                  </div>
                </div>
              </div>
