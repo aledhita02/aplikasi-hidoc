@@ -1,7 +1,7 @@
 // ambil elemen
 
 var keyword = document.getElementById('keyword');
-var tombolCcari = document.getElementById('tombolCari');
+var tombolCari = document.getElementById('tombolCari');
 var konten = document.getElementById('konten');
 
 keyword.addEventListener('keyup',function(){

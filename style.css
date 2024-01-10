@@ -1,9 +1,14 @@
+.bg-greentua {
+  background-color: #387E50;
+}
+
 .recent-post th {
   height: 30px;
   padding-left: 10px;
   height: 30px;
   padding-left: 10px;
 }
+
 .recent-post img {
   width: 75px;
   height: 75px;
@@ -77,7 +82,7 @@
 
 .komen-lawan {
   width: 100%;
-  border: 3px solid #121212;
+  border: 1px solid #121212;
   height: 8rem;
   margin-bottom: 5px;
 }
@@ -117,7 +122,7 @@
 /*komenlawan v2*/
 .komen-lawan2 {
   width: 100%;
-  border: 3px solid #121212;
+  border: 1px solid #121212;
   height: 8rem;
   margin-bottom: 1rem;
 }
@@ -141,7 +146,7 @@
   height: 70px;
   overflow: hidden;
   padding-top: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .komen-lawan2 textarea {
@@ -202,14 +207,6 @@ a:hover {
   color: #fff;
 }
 
-/*PRIMARY WARNA konsul*/
-.hijau {
-  background-color: #13bfb1;
-}
-
-.text-hijau {
-  color: #13bfb1;
-}
 /* Navbar */
 .navbar-brand {
   font-family: viga;
@@ -222,26 +219,8 @@ a:hover {
   text-align: center;
 }
 
-.workingspace img {
-  border-radius: 12px;
-  width: 536px;
-  height: 371px;
-}
-
-.workingspace h3 {
-  font-size: 3rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  margin-top: 30px;
-  color: #121212;
-}
-
-.workingspace h3 span {
-  font-weight: 500;
-}
-
 .workingspace p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #121212;
   font-weight: 200;
   height: 50px;
@@ -394,7 +373,7 @@ a:hover {
 } */
 
 .jumbotron::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 100%;
@@ -453,7 +432,7 @@ a:hover {
 .titleberita {
   margin-top: 5rem;
   margin-left: 0px;
-  border-left: 3px solid #13bfb1;
+  border-left: 3px solid rgb(0, 165, 0);
 }
 
 .titleberita h1 {
@@ -474,13 +453,13 @@ a:hover {
   color: #636363;
 }
 
-.ourdoctor {
+/* .ourdoctor {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-}
+} */
 
 .ourdoctor h4 {
   text-align: center;
@@ -498,7 +477,7 @@ a:hover {
 }
 
 .ourdoctor::after {
-  content: '';
+  content: "";
   display: block;
   border-bottom: 4px solid #13bfb1;
   width: 100%;
@@ -571,7 +550,7 @@ a:hover {
 }
 
 .label_profile {
-  background-color: #13bfb1;
+  background-color: #109137;
   text-transform: lowercase;
   text-align: center;
   font-size: 16px;
@@ -686,14 +665,71 @@ a:hover {
   font-size: 10px;
 }
 
+@media (min-width: 320px) {
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #ffffff;
+    width: 20%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
 
+  .jumbotron {
+    margin-top: -150px;
+    height: 240vh;
+  }
+
+  .jumbotron h1 {
+    margin-top: 200px;
+  }
+  
+  .jumbotron p {
+    margin-top: 290px;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+    border-radius: 25px;
+    height: 270px;
+    margin-top: -40rem;
+    margin-bottom: 45rem;
+    background-color: white;
+    padding: 10px;
+    z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .tombolpost {
+    text-transform: capitalize;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 0.5rem;
+    width: 5rem;
+    height: 1.5rem;
+    margin-top: 20rem;
+  }
+  .panel {
+    justify-content: center;
+    margin-bottom: -38rem;
+  }
+
+  .komen-lawan textarea {
+    margin-top: 15px;
+    width: 100%;
+    resize: none;
+    height: 40px;
+  }
+}
 
 /* DESKTOP VERSION */
-@media (min-width: 992px) {
+@media (min-width: 750px) {
   .navbar-brand,
   .nav-link {
     color: white !important;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
   }
   .nav-link {
     text-transform: uppercase;
@@ -702,9 +738,9 @@ a:hover {
   }
 
   .nav-link:hover::after {
-    content: '';
+    content: "";
     display: block;
-    border-bottom: 3px solid #13bfb1;
+    border-bottom: 3px solid #ffffff;
     width: 50%;
     margin: auto;
     padding-bottom: 5px;
@@ -713,12 +749,19 @@ a:hover {
 
   .jumbotron {
     margin-top: -75px;
-    height: 1000px;
+    height: 50rem;
   }
-  .jumbotron p {
-    margin-top: 220px;
+
+  .jumbotron p,
+  .jumbotron h1 {
+    margin-top: 100px;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .panel {
+    justify-content: space-between;
+    margin-bottom: -35rem;
   }
 
   .workingspace {
@@ -733,21 +776,21 @@ a:hover {
   .info-panel {
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
     border-radius: 25px;
+    justify-content: center;
     width: 220px;
-    height: 220px;
-    margin-top: -110px;
+    height: 260px;
+    margin-top: 70px;
     background-color: white;
     padding: 30px;
     z-index: 1;
   }
 
-  .testimonial h5 {
-    font-size: 32px;
+  .panel {
+    font-size: 10px;
   }
 
-  .doctor img {
-    margin-top: 5rem;
-    width: 389px;
+  .testimonial h5 {
+    font-size: 32px;
   }
 
   .tombol2 {
@@ -766,7 +809,7 @@ a:hover {
 
   .komen-lawan {
     width: 100%;
-    border: 3px solid #121212;
+    border: 1px solid #121212;
     height: 8rem;
     margin-bottom: 1rem;
     height: auto !important; /* for IE as it does not support min-height */
@@ -798,7 +841,7 @@ a:hover {
 
   .komen-lawan textarea {
     margin-top: 15px;
-    width: 50%;
+    width: 100%;
     resize: none;
     height: 40px;
   }
@@ -820,7 +863,7 @@ a:hover {
     margin-bottom: 10px;
   }
 
-    @media (min-width: 1366px) {
+  @media (min-width: 1366px) {
     .jumbotron {
       margin-top: -100px; /* Adjust the margin */
       height: 1000px; /* Adjust the height */
@@ -837,7 +880,7 @@ a:hover {
 @media (min-width: 1200px) {
   .komen-lawan textarea {
     margin-top: 15px;
-    width: 80%;
+    width: 100%;
     resize: none;
     height: 150px;
   }
@@ -854,14 +897,33 @@ a:hover {
     width: 270px; /* Adjust the width */
     height: 280px; /* Adjust the height */
     margin-top: -20px; /* Adjust the margin-top */
-    margin-left: -78px;
+    margin-left: -8px;
+  }
+
+  .panel {
+    justify-content: left;
+    margin-bottom: -33rem;
   }
 
   .doctor img {
     margin-top: 18.5rem; /* Adjust the margin-top */
     margin-left: -3rem; /* Adjust the margin-left */
-    width: 30rem; /* Adjust the width */
+    width: 25rem; /* Adjust the width */
     height: 40rem; /* Adjust the height */
+  }
+
+  .doctor img {
+    display: block;
+  }
+
+  .titleberita {
+    margin-top: -20rem;
+  }
+
+  .jumbotron h1 {
+    margin-top: 220px;
+    font-weight: 400;
+    font-size: 1.5rem;
   }
 }
 
@@ -870,7 +932,7 @@ a:hover {
   /* Add styles specific to 1920px width */
   .jumbotron {
     margin-top: -100px; /* Adjust the margin for 1920px width */
-    height: 1000px; /* Adjust the height for 1920px width */
+    height: 78rem; /* Adjust the height for 1920px width */
   }
 
   .jumbotron p {
@@ -879,31 +941,43 @@ a:hover {
   }
 
   .info-panel {
-    width: 220px; /* Adjust the width */
+    width: 250px; /* Adjust the width */
     height: 280px; /* Adjust the height */
-    margin-top: -100px; /* Adjust the margin-top */
-    margin-left: 45px;
+    margin-top: -250px; /* Adjust the margin-top */
+    margin-left: 0;
   }
 
   .doctor img {
-    margin-top: 18.5rem; /* Adjust the margin-top */
-    margin-left: -3rem; /* Adjust the margin-left */
-    width: 30rem; /* Adjust the width */
-    height: 40rem; /* Adjust the height */
+    margin-top: 24rem; /* Adjust the margin-top */
+    margin-left: -6rem; /* Adjust the margin-left */
+    width: 40rem; /* Adjust the width */
+    height: 50rem; /* Adjust the height */
   }
 
+  .panel {
+    justify-content: left;
+    margin-bottom: -20rem;
+    padding-left: 7rem;
+  }
 
+  .panel-jarak {
+    margin-left: 2rem;
+    margin-right: -8rem;
+  }
 }
 
-@media (max-width: 575.98px) and (max-width: 767.98px) {
+@media (min-width: 300px) and (max-width: 750px) {
   .doctor img {
     display: none;
   }
 }
 
-@media (max-width: 767.98px) and (max-width: 867.98px) {
+@media (min-width: 750px) and (max-width: 1024px) {
   .doctor img {
     display: none;
+  }
+  .panel {
+    justify-content: center;
   }
 }
 
@@ -919,7 +993,7 @@ a:hover {
   position: relative;
 }
 .dropdown-menu:before {
-  content: '';
+  content: "";
   position: absolute;
   top: -20px;
   right: 12px;

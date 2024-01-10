@@ -9,7 +9,7 @@
 					</div>
 
 					<div class="col-lg-6">
-						<span class="badge badge-secondary label_profile">
+						<span class="badge badge-success mt-3">
 							<?= $_SESSION['role'] ?>
 						</span>
 						<h1 class="nama_profile">

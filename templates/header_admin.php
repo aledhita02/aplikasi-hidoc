@@ -39,20 +39,30 @@ $lihatDokter = $dktr->tampilDokterBySpesial();
     <!-- App Css-->
     <link href="plugin/dist/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
+    <!-- DataTables -->
+    <link href="plugin/dist/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="plugin/dist/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+
+    <!-- Responsive datatable examples -->
+    <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+
 </head>
 
 <body>
-    <header id="page-topbar" >
+    <header id="page-topbar">
         <div class="navbar-header bg-success">
             <div class="d-flex">
                 <!-- LOGO -->
                 <div class="navbar-brand-box bg-success">
                     <a href="index.php" class="logo logo-dark">
                         <span class="logo-sm">
-                            <img src="plugin/dist/assets/images/logo-sm.svg" alt="" height="30">
+                            <img src="img/HIDOC-logo.svg" alt="" height="30">
                         </span>
                         <span class="logo-lg">
-                            <img src="assets/images/logo-sm.svg" alt="" height="24"> <span class="logo-txt text-light">HI-DOC</span>
+                            <img src="img/HIDOC.svg" alt="" height="70"> <span
+                                class="logo-txt text-light"></span>
                         </span>
                     </a>
 
@@ -66,12 +76,13 @@ $lihatDokter = $dktr->tampilDokterBySpesial();
                     </a> -->
                 </div>
 
-                <button type="button" class="text-light btn btn-sm px-3 font-size-16 header-item" id="vertical-menu-btn">
+                <button type="button" class="text-light btn btn-sm px-3 font-size-16 header-item"
+                    id="vertical-menu-btn">
                     <i class="fa fa-fw fa-bars"></i>
                 </button>
 
             </div>
-            
+
             <div class="d-flex">
                 <!-- <div class="dropdown d-none d-sm-inline-block">
                     <button type="button" class="btn header-item" id="mode-setting-btn">
@@ -81,12 +92,13 @@ $lihatDokter = $dktr->tampilDokterBySpesial();
                 </div> -->
 
                 <div class="dropdown d-inline-block">
-                    <button type="button" class="btn header-item bg-success "
-                        id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
+                    <button type="button" class="btn header-item bg-success " id="page-header-user-dropdown"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img class="bg-success rounded-circle header-profile-user" src="<?= $_SESSION['foto'] ?>"
                             alt="Header Avatar">
-                        <span class="d-none d-xl-inline-block ms-1 fw-medium text-light"><?= $_SESSION['nama'] ?></span>
+                        <span class="d-none d-xl-inline-block ms-1 fw-medium text-light">
+                            <?= $_SESSION['nama'] ?>
+                        </span>
                         <i class="mdi mdi-chevron-down d-none d-xl-inline-block text-light"></i>
                     </button>
                     <div class="dropdown-menu dropdown-menu-end">
@@ -114,47 +126,47 @@ $lihatDokter = $dktr->tampilDokterBySpesial();
 
     <div class="vertical-menu">
 
-                <div data-simplebar class="h-100">
+        <div data-simplebar class="h-100">
 
-                    <!--- Sidemenu -->
-                    <div id="sidebar-menu">
-                        <!-- Left Menu Start -->
-                        <ul class="metismenu list-unstyled" id="side-menu">
-                            <li class="menu-title" data-key="t-menu">Menu</li>
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+                <!-- Left Menu Start -->
+                <ul class="metismenu list-unstyled" id="side-menu">
+                    <li class="menu-title" data-key="t-menu">Menu</li>
 
-                            <li>
-                                <a href="index.php">
-                                    <i data-feather="home"></i>
-                                    <!-- <span class="badge rounded-pill bg-success-subtle text-success float-end">9+</span> -->
-                                    <span data-key="t-dashboard">Dashboard</span>
-                                </a>
-                            </li>
+                    <li>
+                        <a href="index.php">
+                            <i data-feather="home"></i>
+                            <!-- <span class="badge rounded-pill bg-success-subtle text-success float-end">9+</span> -->
+                            <span data-key="t-dashboard">Dashboard</span>
+                        </a>
+                    </li>
 
-                            <li class="menu-title" data-key="t-apps">Apps</li>
-                            <li>
-                                <a href="javascript: void(0);" class="has-arrow">
-                                    <i data-feather="mail"></i>
-                                    <span data-key="t-email">Kelola Data</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="index.php?p=tabel_dokter" data-key="t-inbox">Dokter</a></li>
-                                    <li><a href="index.php?p=tabel_spesialis" data-key="t-read-email">Spesialis</a></li>
-                                    <li><a href="index.php?p=tabel_user" data-key="t-read-email">User</a></li>
-                                </ul>
-                            </li>
+                    <li class="menu-title" data-key="t-apps">Apps</li>
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow">
+                            <i data-feather="mail"></i>
+                            <span data-key="t-email">Kelola Data</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="index.php?p=tabel_dokter" data-key="t-inbox">Dokter</a></li>
+                            <li><a href="index.php?p=tabel_spesialis" data-key="t-read-email">Spesialis</a></li>
+                            <li><a href="index.php?p=tabel_user" data-key="t-read-email">User</a></li>
+                        </ul>
+                    </li>
 
-                            <li>
-                                <a href="index.php?p=lihat_artikel">
-                                    <i data-feather="calendar"></i>
-                                    <span data-key="t-calendar">Artikel</span>
-                                </a>
-                            </li>
-                
-                            
-                    </div>
-                    <!-- Sidebar -->
-                </div>
+                    <li>
+                        <a href="index.php?p=lihat_artikel">
+                            <i data-feather="calendar"></i>
+                            <span data-key="t-calendar">Artikel</span>
+                        </a>
+                    </li>
+
+
             </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
 
     <!-- <div class="container-fluid">
         <div class="row">
@@ -202,4 +214,4 @@ $lihatDokter = $dktr->tampilDokterBySpesial();
                 </div>
             </nav> -->
 
-            <!-- <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"> -->
+    <!-- <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"> -->
