@@ -1,32 +1,31 @@
+
 .edit_profile {
-  box-shadow: 0 3px 20px rgba(0,0,0,0.16);
-  border-radius:10px; 
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
   background-color: white;
   text-align: center;
   padding: 30px;
 }
 .edit_profile_image {
-
   width: 260px;
   height: 260px;
-  border-radius: 140px;   
+  border-radius: 140px;
 }
-
 
 .edit_profile p {
   margin-top: -5px;
 }
 
 .label_profile {
-  background-color: #13BFB1;
+  background-color: #13bfb1;
   text-transform: lowercase;
-  text-align: center; 
-  font-size:  16px;
+  text-align: center;
+  font-size: 16px;
   margin-top: 10px;
 }
 
 .nama_profile {
-  margin-bottom:  20px;
+  margin-bottom: 20px;
   font-size: 32px;
 }
 
@@ -35,7 +34,7 @@
 }
 .p_class {
   display: inline-block;
-  margin-left: 5px; 
+  margin-left: 5px;
 }
 
 .table_privacy {
@@ -43,45 +42,41 @@
 }
 
 .barThead {
-  background-color: #13BFB1;
+  background-color: #13bfb1;
   color: #fff;
   text-align: center;
 }
 .label_profile {
-    background-color: #13BFB1;
-    text-transform: lowercase;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
+  background-color: #13bfb1;
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .icon_kue {
-    width: 25px;
-    height: 25px;
-
+  width: 25px;
+  height: 25px;
 }
 .gambar-bulat {
-    width: 200px;
-    height: 200px;
-    border-radius: 120px;
-    margin-right:   10px;
-    margin-top:   10px;
-
+  width: 200px;
+  height: 200px;
+  border-radius: 120px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
-
-.detail-dokter h3{
-    margin-bottom: 0;
+.detail-dokter h3 {
+  margin-bottom: 0;
 }
 
-.detail-dokter p{
-    font-size:  14px;
+.detail-dokter p {
+  font-size: 14px;
 }
 .tombolpost {
   margin-top: 5px;
   text-transform: uppercase;
-  border-radius: 40px; 
+  border-radius: 40px;
   font-weight: bold;
   font-size: 10px;
   float: right;
@@ -89,7 +84,7 @@
 }
 .recent-post {
   border: 1px solid #eee;
-   margin-top:  10px;
+  margin-top: 10px;
 }
 
 .recent-post th {
@@ -108,7 +103,7 @@
   float: left;
 }
 
-.recent-post a{
+.recent-post a {
   color: black;
 }
 .recent-post h1 {
@@ -128,10 +123,10 @@
 
 .detailberita {
   border: 1px solid #eee;
-  margin-top:  10px;
+  margin-top: 10px;
 }
 
-.detailberita h1{
+.detailberita h1 {
   font-size: 40px;
   font-weight: 400;
   text-transform: uppercase;
@@ -140,7 +135,7 @@
   /*color: #636363;*/
 }
 
-.detailberita img{
+.detailberita img {
   margin-bottom: 10px;
 }
 
@@ -150,14 +145,14 @@
   width: 100%;
   border: 1px solid #eee;
   height: auto;
-  margin-bottom:  5px;
+  margin-bottom: 5px;
 }
 
 .komentar .col-8 {
   padding: 0;
 }
 
-.komen-lawan img{
+.komen-lawan img {
   width: 60px;
   height: 60px;
   border-radius: 120px;
@@ -165,16 +160,16 @@
   margin: 10px 10px 10px 10px;
 }
 
-.komen-lawan h1{
+.komen-lawan h1 {
   margin-top: 10px;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 0;
   text-transform: uppercase;
 }
-.komen-lawan p{
+.komen-lawan p {
   height: 70px;
-  overflow:  hidden;
+  overflow: hidden;
   padding-right: 10px;
 }
 
@@ -182,7 +177,7 @@
   margin-top: 15px;
   width: 70%;
   resize: none;
-    height: 40px;
+  height: 40px;
 }
 
 /*komenlawan v2*/
@@ -190,12 +185,10 @@
   width: 100%;
   border: 1px solid #eee;
   height: 83px;
-  margin-bottom:  5px;
+  margin-bottom: 5px;
 }
 
-
-
-.komen-lawan2 img{
+.komen-lawan2 img {
   width: 60px;
   height: 60px;
   border-radius: 120px;
@@ -203,16 +196,16 @@
   margin: 10px 10px 10px 10px;
 }
 
-.komen-lawan2 h1{
+.komen-lawan2 h1 {
   margin-top: 10px;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 0;
   text-transform: uppercase;
 }
-.komen-lawan2 p{
+.komen-lawan2 p {
   height: 70px;
-  overflow:  hidden;
+  overflow: hidden;
   padding-right: 10px;
 }
 
@@ -220,13 +213,13 @@
   margin-top: 15px;
   width: 70%;
   resize: none;
-    height: 40px;
+  height: 40px;
 }
 
 /*Workingspace*/
 .workingspace {
   margin-top: 80px;
-  text-align : center;
+  text-align: center;
 }
 
 .workingspace img {
@@ -249,41 +242,36 @@
 
 .workingspace p {
   font-size: 18px;
-  color: #ACACAC;
+  color: #acacac;
   font-weight: 200;
   height: 60px;
-  margin: 30px 0 ;
+  margin: 30px 0;
   overflow: hidden;
 }
 .tombol {
   text-transform: uppercase;
-  border-radius: 40px; 
+  border-radius: 40px;
   font-weight: bold;
 }
 
 .btn-secondary {
-  background-color: #13BFB1;
-  border-color:#13BFB1;
+  background-color: #13bfb1;
+  border-color: #13bfb1;
 }
 
 .titleberita {
   margin-top: 20px;
   margin-left: 0px;
-  border-left: 3px solid #13BFB1;
+  border-left: 3px solid #13bfb1;
 }
 .titleberita h1 {
   text-transform: uppercase;
   font-size: 24px;
-  color: #13BFB1;
+  color: #13bfb1;
 }
 
 .maelee {
   margin-top: 15px;
-}
-
-.pagination {
-  width: 30px;
-  height: 40px;
 }
 
 .berita img {
@@ -298,45 +286,43 @@
 }
 
 .berita p {
-  color: #ACACAC;
+  color: #acacac;
   font-size: 14px;
   height: 46px;
   overflow: hidden;
 }
 @media (min-width: 992px) {
-
   .workingspace {
-    text-align: left; 
+    text-align: left;
   }
 }
 
 .admin_panel {
   text-align: center;
-  margin-top: 10px; 
+  margin-top: 10px;
   height: 200px;
-  border-radius: 12px; 
+  border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 3px 20px rgba(0,0,0,0.16);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
 }
 
-.admin_panel h1{
+.admin_panel h1 {
   margin-top: 20px;
   font-size: 50px;
 }
 
-.admin_panel p{
+.admin_panel p {
   margin-top: -10px;
   font-size: 22px;
-  color: #13BFB1;
+  color: #13bfb1;
 }
 
-
-.admin_panel p{
+.admin_panel p {
   margin-top: -10px;
   font-size: 22px;
-  color: #13BFB1;
+  color: #13bfb1;
 }
-.admin_panel img{
+.admin_panel img {
   margin-left: 10px;
 }
 
@@ -374,10 +360,9 @@
   color: #636363;
 }
 
-
 /*PRIMARY WARNA konsul*/
 .hijau {
-  background-color: #13BFB1;
+  background-color: #13bfb1;
 }
 
 .feather {
@@ -397,14 +382,14 @@
   left: 0;
   z-index: 100; /* Behind the navbar */
   padding: 48px 0 0; /* Height of navbar */
-  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-sticky {
   position: relative;
   top: 0;
   height: calc(100vh - 48px);
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
@@ -415,7 +400,6 @@
     position: sticky;
   }
 }
-
 
 .sidebar .nav-link {
   font-weight: 500;
@@ -437,7 +421,7 @@
 }
 
 .sidebar-heading {
-  font-size: .75rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
 }
 
@@ -454,27 +438,27 @@
  */
 
 .navbar-brand {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   font-size: 1rem;
-  background-color: #13BFB1;
+  background-color: #13bfb1;
 }
 
 .navbar .form-control {
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   border-width: 0;
   border-radius: 0;
 }
 
 .form-control-dark {
   color: #fff;
-  background-color: rgba(255, 255, 255, .1);
-  border-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .form-control-dark:focus {
   border-color: transparent;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
 }
 
 /* FORM SENDIRI */
@@ -501,7 +485,7 @@
 
 .chatlogs::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background: rgba(0,0,0,.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .chat {
@@ -526,10 +510,10 @@
 .chat .chat-message {
   /*width: 80%;*/
   padding: 15px;
-  margin:5px 10px 0;
+  margin: 5px 10px 0;
   border-radius: 10px;
-  color:#fff;
-  font-size: 18px;  
+  color: #fff;
+  font-size: 18px;
 }
 
 .lawan .chat-message {
@@ -553,12 +537,12 @@
   background: #fbfbfb;
   width: 75%;
   height: 50px;
-  border:  2px solid #eee;
+  border: 2px solid #eee;
   border-radius: 3px;
   resize: none;
   padding: 10px;
-  font-size:18px;
-  color:#333; 
+  font-size: 18px;
+  color: #333;
 }
 
 .chat-form textarea:focus {
@@ -571,7 +555,7 @@
 
 .chat-form textarea::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background: rgba(0,0,0,.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .chat-form button {
@@ -579,16 +563,15 @@
   padding: 5px 15px;
   font-size: 30px;
   color: #fff;
-  border:none;
-  margin:0 10px;
+  border: none;
+  margin: 0 10px;
   border-radius: 3px;
   box-shadow: 0 3px 0 #0eb2c1;
   cursor: pointer;
 
-  -webkit-transition: background .2s ease;
-  -moz-transition: background .2s ease;
-  -o-transition: background .2s ease;
-
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
 }
 
 .chat-form button:hover {
@@ -597,54 +580,53 @@
 
 @media (min-width: 992px) {
   .komen-lawan {
-  width: 100%;
-  border: 1px solid #eee;
-  height:auto !important;        /* for IE as it does not support min-height */
+    width: 100%;
+    border: 1px solid #eee;
+    height: auto !important; /* for IE as it does not support min-height */
+  }
 
-}
+  .komentar .col-8 {
+    padding: 0;
+  }
 
-.komentar .col-8 {
-  padding: 0;
-}
+  .komen-lawan img {
+    width: 60px;
+    height: 60px;
+    border-radius: 120px;
+    float: left;
+    margin: 10px 10px 10px 10px;
+  }
 
-.komen-lawan img{
-  width: 60px;
-  height: 60px;
-  border-radius: 120px;
-  float: left;
-  margin: 10px 10px 10px 10px;
-}
+  .komen-lawan h1 {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  .komen-lawan p {
+    height: 70px;
+    overflow: hidden;
+  }
 
-.komen-lawan h1{
-  margin-top: 10px;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-.komen-lawan p{
-  height: 70px;
-  overflow: hidden;
-}
-
-.komen-lawan textarea {
-  margin-top: 15px;
-  width: 85%;
-  resize: none;
+  .komen-lawan textarea {
+    margin-top: 15px;
+    width: 85%;
+    resize: none;
     height: 40px;
-}
-/*Akhir CSS Komen*/
-.edit_profile {
-  text-align: left;
+  }
+  /*Akhir CSS Komen*/
+  .edit_profile {
+    text-align: left;
   }
 }
 
 /* DESKTOP VERSION FULL HD*/
 @media (min-width: 1200px) {
   .komen-lawan textarea {
-  margin-top: 15px;
-  width: 89%;
-  resize: none;
+    margin-top: 15px;
+    width: 89%;
+    resize: none;
     height: 40px;
   }
-  }
+}
