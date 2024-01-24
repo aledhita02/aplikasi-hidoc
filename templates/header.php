@@ -15,7 +15,7 @@
     include 'header_admin.php';
   }
 
-  
+
 }else {
   include 'header_user.php';
 }

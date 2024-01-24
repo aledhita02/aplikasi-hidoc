@@ -25,7 +25,7 @@ $spesialis = $spesial->tampilSpesialisasi();
             <div class="page-title-right">
               <ol class="breadcrumb m-0">
                 <li class="breadcrumb-item"><a href="javascript: void(0);">Kelola Data</a></li>
-                <li class="breadcrumb-item active">Tabel User</li>
+                <li class="breadcrumb-item active">Data User</li>
               </ol>
             </div>
 
@@ -39,7 +39,7 @@ $spesialis = $spesial->tampilSpesialisasi();
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h1>Tabel User</h1>
+              <h1>Data User</h1>
             </div>
 
             <div class="card-body">
@@ -68,7 +68,23 @@ $spesialis = $spesial->tampilSpesialisasi();
                       <td>
                         <?= $row['nama_user'] ?>
                       </td>
-                      <td>19</td>
+                      <td>
+                        <?php
+
+                        // Mendapatkan tanggal lahir dari variabel $row['tgl_lahir']
+                        $tanggal_lahir = $row['tgl_lahir'];
+
+                        // Mendapatkan tahun lahir dari tanggal lahir
+                        $tahun_lahir = date('Y', strtotime($tanggal_lahir));
+
+                        // Mendapatkan tahun saat ini
+                        $tahun_sekarang = date('Y');
+
+                        // Menghitung umur
+                        $umur = $tahun_sekarang - $tahun_lahir;
+                        ?>
+                        <?= $umur ?>
+                      </td>
                       <td>
                         <?php
                         if ($row['jk'] == "") {
@@ -129,7 +145,7 @@ $spesialis = $spesial->tampilSpesialisasi();
                             <h3>
                               <?= $row['nama_user'] ?>
                             </h3>
-                            <span class="badge badge-secondary label_profile">
+                            <span class="badge badge-success mt-1 mb-3">
                               <?= $row['role'] ?>
                             </span>
                             <br>
@@ -150,7 +166,10 @@ $spesialis = $spesial->tampilSpesialisasi();
                               if ($row['tgl_lahir'] == "") {
                                 echo "Belum Diisi";
                               } else {
-                                echo $row['tgl_lahir'];
+                              
+                              $tgl_formatted = date("d F Y", strtotime($row['tgl_lahir']));
+                              echo $tgl_formatted;
+                               
                               }
                               ?>
 

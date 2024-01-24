@@ -61,7 +61,7 @@ function formatTanggalDanWaktu($tanggalWaktu)
             <div class="page-title-right">
               <ol class="breadcrumb m-0">
                 <li class="breadcrumb-item"><a href="javascript: void(0);">Konsultasi</a></li>
-                <li class="breadcrumb-item active">Riwayat Konsultasi</li>
+                <li class="breadcrumb-item active">History Konsultasi</li>
               </ol>
             </div>
 
@@ -73,18 +73,18 @@ function formatTanggalDanWaktu($tanggalWaktu)
         <div class="col-4 cari-chat text-center">
           <!-- <form action="cari_pasien.php" method="get"> -->
           <input class="form-control mr-sm-2 kotak-chat" name="search" type="search" placeholder="Cari Pasien..."
-            autofocus aria-label="Search" id="keyword">
+            autofocus aria-label="Search" id="keyword3">
           <!-- <button type="submit">Cari</button> -->
           <!-- </form> -->
 
         </div>
 
         <div class="col-8 text-center mt-2">
-          <h2 class="text-success">Riwayat Chat</h2>
+          <h2 class="text-success">History Chat</h2>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" id="konten3">
         <div class="col-4 kotak-list-chat">
           <!-- LIST ORANG -->
 
@@ -304,11 +304,12 @@ function formatTanggalDanWaktu($tanggalWaktu)
 </div>
 
 
+
 <!-- <script src="js/chatDokter2.js"></script> -->
 <!-- <script src="jquery/jquery-1.11.3.min.js"></script> -->
 <!-- <script src="jquery/jquery-3.3.1.min.new.js"></script> -->
 
-
+<script src="js/cariChat.js"></script>
 <script type="text/javascript">
 
   // function updateChat(){

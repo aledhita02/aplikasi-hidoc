@@ -26,7 +26,7 @@ $spesialis = $spesial->tampilSpesialisasi();
             <div class="page-title-right">
               <ol class="breadcrumb m-0">
                 <li class="breadcrumb-item"><a href="javascript: void(0);">Kelola Data</a></li>
-                <li class="breadcrumb-item active">Tabel Spesialis</li>
+                <li class="breadcrumb-item active">Data Spesialis</li>
               </ol>
             </div>
 
@@ -35,12 +35,12 @@ $spesialis = $spesial->tampilSpesialisasi();
       </div>
       <!-- end page title -->
 
-      <!-- tabel spesialist -->
+      <!-- Data Spesialist -->
       <div class="row">
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h1>Tabel Spesialis</h1>
+              <h1>Data Spesialis</h1>
               <button type="button" class="btn btn-outline-success mb-2 mt-2" data-toggle="modal"
                 data-target="#tambah_spesialis" data-whatever="@getbootstrap">Tambah Spesialis</button>
             </div>

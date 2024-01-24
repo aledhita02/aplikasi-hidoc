@@ -1,7 +1,20 @@
 </main>
 </div>
 </div>
-
+<footer class="footer bg-success text-white">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <script>document.write(new Date().getFullYear())</script> © <b>HIDOC</b>.
+      </div>
+      <div class="col-sm-6">
+        <div class="text-sm-end d-none d-sm-block">
+          Design & Develop by <a href="#!" class="text-decoration-underline text-white">HI-DOC</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 <script src="jslogin/placeholders.min.js"></script> <!-- polyfill for the HTML5 placeholder attribute -->
 <script src="jslogin/main.js"></script> <!-- Resource JavaScript -->
 <!-- Bootstrap core JavaScript

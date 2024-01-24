@@ -1,6 +1,19 @@
 </div>
 </div>
-
+<footer class="footer bg-success text-white">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <script>document.write(new Date().getFullYear())</script> © <b>HIDOC</b>.
+      </div>
+      <div class="col-sm-6">
+        <div class="text-sm-end d-none d-sm-block">
+          Design & Develop by <a href="#!" class="text-decoration-underline text-white">HI-DOC</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 <!-- Bootstrap core JavaScript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->

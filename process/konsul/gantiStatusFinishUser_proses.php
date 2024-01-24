@@ -1,16 +1,17 @@
 <?php
-  include '../../database/Konsultasi.php';
+include '../../database/Konsultasi.php';
 
-  $id = $_GET['id'];
+$id = $_GET['id'];
 
-  $konsul = new Konsultasi;
-  $konsul->updateKonsultasiFinish($id);
+$konsul = new Konsultasi;
+$konsul->updateKonsultasiFinish($id);
 
-  echo "<script>
+echo "<script>
             alert('Konsultasi telah selesai !');
-            window.location = '../../pages/select_chat_blank.php';
+            window.location = '../../index.php?p=select_chat_blank&&id_konsul=" .$id."';
+
         </script>";
 
 
 
- ?>
+?>

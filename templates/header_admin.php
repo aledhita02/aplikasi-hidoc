@@ -2,6 +2,30 @@
 $dktr = new Dokter;
 $dokter = $dktr->hitungDokter();
 $lihatDokter = $dktr->tampilDokterBySpesial();
+
+// Mendefinisikan nilai $page dan $title
+$page = $_GET['p'];
+$title = 'Homepage';
+
+function titleWeb($page, $title) {
+    if ($page == 'select_main_admin') {
+        $title = 'Homepage';
+    } else if ($page == 'edit_profil') {
+        $title = 'Profile Admin';
+    } else if ($page == 'lihat_artikel') {
+        $title = 'Data Artikel';
+    } else if ($page == 'tabel_spesialis') {
+        $title = 'Data Spesialis';
+    } else if ($page == 'tabel_dokter') {
+        $title = 'Data Dokter';
+    } else if ($page == 'tabel_user') {
+        $title = 'Data User';
+    } else {
+        $title = 'Error';
+    }
+    
+    return $title;
+}
 ?>
 
 <!doctype html>
@@ -9,19 +33,15 @@ $lihatDokter = $dktr->tampilDokterBySpesial();
 
 <head>
 
-
-
-    <title>Dokter</title>
+    <title><?=titleWeb($page, $title)?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="icon" href="img/HIDOC-logo.ico" type="image/x-icon">
 
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
-
-    <!-- App favicon -->
-    <link rel="shortcut icon" href="plugin/dist/assets/images/favicon.ico">
 
     <!-- plugin css -->
     <link href="plugin/dist/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet"
@@ -136,7 +156,7 @@ $lihatDokter = $dktr->tampilDokterBySpesial();
 
                     <li>
                         <a href="index.php">
-                            <i data-feather="home"></i>
+                            <i class="fas fa-tachometer-alt"></i>
                             <!-- <span class="badge rounded-pill bg-success-subtle text-success float-end">9+</span> -->
                             <span data-key="t-dashboard">Dashboard</span>
                         </a>
@@ -145,7 +165,7 @@ $lihatDokter = $dktr->tampilDokterBySpesial();
                     <li class="menu-title" data-key="t-apps">Apps</li>
                     <li>
                         <a href="javascript: void(0);" class="has-arrow">
-                            <i data-feather="mail"></i>
+                            <i class=" fas fa-database"></i>
                             <span data-key="t-email">Kelola Data</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
@@ -157,7 +177,7 @@ $lihatDokter = $dktr->tampilDokterBySpesial();
 
                     <li>
                         <a href="index.php?p=lihat_artikel">
-                            <i data-feather="calendar"></i>
+                            <i class=" fas fa-clipboard"></i>
                             <span data-key="t-calendar">Artikel</span>
                         </a>
                     </li>
@@ -194,19 +214,19 @@ $lihatDokter = $dktr->tampilDokterBySpesial();
 
                         <li class="nav-item">
                             <a class="nav-link" href="index.php?p=tabel_spesialis">
-                                <p><img class="" src="img/cd-icon-username.svg"> Tabel Spesialis</p>
+                                <p><img class="" src="img/cd-icon-username.svg"> Data Spesialis</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="index.php?p=tabel_dokter">
-                                <p><img class="" src="img/cd-icon-username.svg"> Tabel Dokter</p>
+                                <p><img class="" src="img/cd-icon-username.svg"> Data Dokter</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="index.php?p=tabel_user">
-                                <p><img class="" src="img/cd-icon-username.svg"> Tabel User</p>
+                                <p><img class="" src="img/cd-icon-username.svg"> Data User</p>
                             </a>
                         </li>
 

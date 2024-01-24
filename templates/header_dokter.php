@@ -6,6 +6,28 @@ $id = $_SESSION['id'];
 $hitungKonsulPending = $konsul->hitungKonsultasiDokterPending($id);
 $hitungKonsulProcess = $konsul->hitungKonsultasiDokterProcess($id);
 $hitungKonsulFinish = $konsul->hitungKonsultasiDokterFinish($id);
+
+// Mendefinisikan nilai $page dan $title
+
+$title = 'Homepage';
+
+function titleWeb($page, $title) {
+  if ($page == 'select_main_dokter') {
+      $title = 'Homepage';
+  } else if ($page == 'edit_profil') {
+      $title = 'Profile Dokter';
+  } else if ($page == 'pesan_pending') {
+      $title = 'Antrian Pasien';
+  } else if ($page == 'pesan_proses') {
+      $title = 'Konsultasi Pasien';
+  } else if ($page == 'pesan_history') {
+      $title = 'History Konsultasi';
+  } else {
+      $title = 'Error';
+  }
+  
+  return $title;
+}
 ?>
 
 <!doctype html>
@@ -15,10 +37,12 @@ $hitungKonsulFinish = $konsul->hitungKonsultasiDokterFinish($id);
 
 
 
-  <title>Dokter</title>
+  <title><?=titleWeb($page, $title)?></title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="icon" href="img/HIDOC-logo.ico" type="image/x-icon">
 
   <!-- Custom styles for this template -->
   <link href="dashboard.css" rel="stylesheet">
@@ -120,9 +144,7 @@ $hitungKonsulFinish = $konsul->hitungKonsultasiDokterFinish($id);
     </div>
   </header>
   <div class="vertical-menu">
-
     <div data-simplebar class="h-100">
-
       <!--- Sidemenu -->
       <div id="sidebar-menu">
         <!-- Left Menu Start -->
@@ -130,8 +152,8 @@ $hitungKonsulFinish = $konsul->hitungKonsultasiDokterFinish($id);
           <li class="menu-title" data-key="t-menu">Menu</li>
 
           <li>
-            <a href="index.php">
-              <i data-feather="home"></i>
+            <a href="index.php?p=select_main_dokter">
+              <i class="fas fa-tachometer-alt"></i>
               <!-- <span class="badge rounded-pill bg-success-subtle text-success float-end">9+</span> -->
               <span data-key="t-dashboard">Dashboard</span>
             </a>
@@ -140,12 +162,12 @@ $hitungKonsulFinish = $konsul->hitungKonsultasiDokterFinish($id);
           <li class="menu-title" data-key="t-apps">Apps</li>
           <li>
             <a href="javascript: void(0);" class="has-arrow">
-              <i data-feather="mail"></i>
+            <i class="fas fa-comment-medical"></i>
               <span data-key="t-email">Konsultasi</span>
             </a>
             <ul class="sub-menu" aria-expanded="false">
               <li>
-                <a href="index.php?p=pesan_pending" data-key="t-inbox">Antrian Konsultasi
+                <a href="index.php?p=pesan_pending" data-key="t-inbox"> Antrian Pasien
                   <span class="badge badge-success ms-2">
                     <?= $hitungKonsulPending ?>
                   </span></a>
@@ -155,7 +177,7 @@ $hitungKonsulFinish = $konsul->hitungKonsultasiDokterFinish($id);
                     <?= $hitungKonsulProcess ?>
                   </span></a>
                 </a></li>
-              <li><a href="index.php?p=pesan_history" data-key="t-read-email">Riwayat Konsultasi
+              <li><a href="index.php?p=pesan_history" data-key="t-read-email">History Konsultasi
                   <span class="badge badge-success ms-2">
                     <?= $hitungKonsulFinish ?>
                   </span></a>

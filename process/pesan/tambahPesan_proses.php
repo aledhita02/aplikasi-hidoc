@@ -1,5 +1,7 @@
 <?php
   include '../../database/Pesan.php';
+  include '../../database/Konsultasi.php';
+  session_start();
 
   date_default_timezone_set('Asia/Jakarta');
 
@@ -43,7 +45,7 @@
 
     echo "<script>
               alert('Pesan terkirim !');
-              window.location = '../../pages/select_chat_blank.php?id_konsul=".$konsul."';
+              window.location = '../../index.php?p=select_chat_blank&&id_konsul=".$konsul."';
           </script>";
   } else{
     if ($filesize <= $sizemax) {
@@ -65,7 +67,7 @@
 
         echo "<script>
                   alert('Pesan terkirim !');
-                  window.location = '../../pages/select_chat_blank.php?id_konsul=".$konsul."';
+                  window.location = '../../index.php?p=select_chat_blank&&id_konsul=".$konsul."';
               </script>";
       }//else if (in_array($ext, $extboleh2)) {
 
@@ -86,13 +88,13 @@
       else {
         echo "<script>
                   alert('Hanya berlaku gambar  !');
-                  window.location = '../../pages/select_chat_blank.php?id_konsul=".$konsul."';
+                  window.location = '../../index.php?p=select_chat_blank&&id_konsul=".$konsul."';
               </script>";
       }
     }else{
       echo "<script>
                 alert('Ukuran terlalu besar    !');
-                window.location = '../../pages/select_chat_blank.php?id_konsul=".$konsul."';
+                window.location = '../../index.php?p=select_chat_blank&&id_konsul=".$konsul."';
             </script>";
     }
   }
