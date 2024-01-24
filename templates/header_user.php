@@ -275,20 +275,20 @@ if (isset($_GET['p']) && ($_GET['p'] == 'select_chat_blank' || $_GET['p'] == 'se
                   </li>
 
                   <li class="nav-item dropdown">
-                    <a class="nav-link text-light" href="index.php?p=select_main/#about" id="topnav-about" role="button">
+                    <a class="nav-link text-light" href="index.php?p=select_main#about" id="topnav-about" role="button">
                       <span data-key="t-dashboard">About</span>
                     </a>
                   </li>
 
                   <li class="nav-item dropdown">
-                    <a class="nav-link text-light" href="index.php?p=select_main/#berita" id="topnav-artikel"
+                    <a class="nav-link text-light" href="index.php?p=select_main#berita" id="topnav-artikel"
                       role="button">
                       <span data-key="t-dashboard">Artikel</span>
                     </a>
                   </li>
 
                   <li class="nav-item dropdown">
-                    <a class="nav-link text-light" href="index.php?p=select_main/#ourdoctor" id="topnav-dokter"
+                    <a class="nav-link text-light" href="index.php?p=select_main#ourdoctor" id="topnav-dokter"
                       role="button">
                       <span data-key="t-dashboard">Dokter</span>
                     </a>

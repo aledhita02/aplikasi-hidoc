@@ -189,7 +189,7 @@ else: ?>
       <p class="cd-signin-modal__bottom-message js-signin-modal-trigger"><a href="#0" data-signin="reset">Forgot your
           password?</a></p>
     </div> <!-- cd-signin-modal__block -->
-
+  
     <div class="cd-signin-modal__block js-signin-modal-block" data-type="signup"> <!-- sign up form -->
       <form action="process/user/tambahUser_proses.php" method="post" class="cd-signin-modal__form"
         enctype="multipart/form-data">
@@ -221,7 +221,7 @@ else: ?>
         </p>
         <p class="cd-signin-modal__fieldset">
           <label class="cd-signin-modal__label cd-signin-modal__label--username cd-signin-modal__label--image-replace"
-            for="signup-username">Nama</label>
+            for="signup-username">Tanggal Lahir</label>
           <input type="date" name="date"
             class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
             id="signup-date"><span class="cd-signin-modal__error">Error message here!</span>

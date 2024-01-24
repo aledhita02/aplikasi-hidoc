@@ -188,10 +188,11 @@ x sigin/signup popup
 
 .cd-signin-modal__container {
   position: relative;
+  top:15%;
   width: 90%;
   max-width: 600px;
   background: #fff;
-  margin: 3em auto 4em;
+  margin: auto;
   cursor: auto;
   border-radius: 0.25em;
   -webkit-transform: translateY(-30px);
@@ -201,6 +202,9 @@ x sigin/signup popup
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+
+
+   /* Adjust the z-index value as needed to ensure the modal is above other elements */
 }
 
 .cd-signin-modal--is-visible .cd-signin-modal__container {
