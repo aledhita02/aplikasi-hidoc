@@ -35,12 +35,12 @@
 			}
 		}
 
-		public function tambahUser($nama, $email, $telp, $pass, $foto)
+		public function tambahUser($nama, $email, $telp, $date, $jk, $pass, $foto)
 		{
-			$sql = "INSERT INTO tuser (nama_user,email_user,telp_user,pass_user,role,foto_user) VALUES(?,?,?,?,?,?)";
+			$sql = "INSERT INTO tuser (nama_user,email_user,telp_user,tgl_lahir,jk,pass_user,role,foto_user) VALUES(?,?,?,?,?,?,?,?)";
 			$stmt = $this->pdo->prepare($sql);
 			$stmt->execute([
-				$nama, $email, $telp, $pass, 'user', $foto
+				$nama, $email, $telp, $date, $jk, $pass, 'user', $foto
 			]);
 		}
 

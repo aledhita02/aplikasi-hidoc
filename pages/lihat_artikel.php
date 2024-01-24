@@ -24,7 +24,7 @@ include 'database/Artikel.php';
             <div class="page-title-right">
               <ol class="breadcrumb m-0">
                 <li class="breadcrumb-item"><a href="javascript: void(0);">Artikel</a></li>
-                <li class="breadcrumb-item active">Tabel Artikel</li>
+                <li class="breadcrumb-item active">Data Artikel</li>
               </ol>
             </div>
 
@@ -33,7 +33,7 @@ include 'database/Artikel.php';
       </div>
       <!-- end page title -->
 
-      <!-- tabel Dokter-->
+      <!-- Data Dokter-->
       <div class="row">
         <div class="col-12">
           <div class="card">

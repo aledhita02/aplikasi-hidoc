@@ -121,7 +121,7 @@ if (isset($_GET['kode'])) {
                         <span class="badge text-white bg-primary">- 25 %</span>
                       </div> -->
                       <div class="product-img position-relative">
-                        <img src="img/doctor1.jpg" alt="" class="img-fluid mx-auto d-block">
+                        <img src="<?= $row['foto_user'] ?>" alt="" class="img-fluid mx-auto d-block">
                       </div>
                       <div class="d-flex justify-content-between align-items-end mt-4">
                         <div>
@@ -246,6 +246,7 @@ if (isset($_GET['kode'])) {
         <?php endif; ?>
 
         <script src="js/cariDokter.js"></script>
+
       <?php else: ?>
         <script type="text/javascript">
           alert('Anda Harus Login sebagai user');

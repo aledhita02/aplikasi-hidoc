@@ -31,7 +31,7 @@ $konsul = new Konsultasi;
             <div class="page-title-right">
               <ol class="breadcrumb m-0">
                 <li class="breadcrumb-item"><a href="javascript: void(0);">Kelola Data</a></li>
-                <li class="breadcrumb-item active">Tabel Dokter</li>
+                <li class="breadcrumb-item active">Data Dokter</li>
               </ol>
             </div>
 
@@ -45,7 +45,7 @@ $konsul = new Konsultasi;
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              <h1>Tabel Dokter</h1>
+              <h1>Data Dokter</h1>
               <button type="button" class="btn btn-outline-success mb-2 mt-2" data-toggle="modal"
                 data-target="#tambah_dokter" data-whatever="@getbootstrap">Tambah Dokter</button>
             </div>
@@ -133,7 +133,7 @@ $konsul = new Konsultasi;
                             <h3>
                               <?= $row['nama_user'] ?>
                             </h3>
-                            <span class="badge badge-secondary label_profile">
+                            <span class="badge badge-success mt-1 mb-3 ">
                               <?= $row['nama_spesialisasi'] ?>
                             </span>
                             <br>
@@ -143,7 +143,9 @@ $konsul = new Konsultasi;
                             </p>
                             <img class="icon_kue float-left" src="img/birthday-cake.svg">
                             <p>
-                              <?= $row['tgl_lahir'] ?>
+                              <?php
+                              $tgl_formatted = date("d F Y", strtotime($row['tgl_lahir'])); ?>
+                              <?= $tgl_formatted ?>
                             </p>
                             <img class="icon_kue float-left" src="img/cd-icon-phone.svg">
                             <p>

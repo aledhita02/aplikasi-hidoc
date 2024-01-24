@@ -1,7 +1,7 @@
 <?php
 if(isset($_SESSION['role'])){
   if ($_SESSION['role'] == 'dokter') {
-    include 'edit_profil.php';
+    include 'select_main_dokter.php';
   }
 
   if ($_SESSION['role'] == 'user') {

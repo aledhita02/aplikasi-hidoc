@@ -40,7 +40,7 @@
 
 		public function tampilArtikel()
 		{
-			$sql = "SELECT * FROM tartikel ORDER BY date DESC LIMIT 1,4";
+			$sql = "SELECT * FROM tartikel ORDER BY date DESC LIMIT 1,6";
 			$stmt = $this->pdo->query($sql);
 			return $stmt;
 		}

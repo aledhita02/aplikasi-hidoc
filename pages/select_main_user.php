@@ -240,5 +240,10 @@
             ?>
           </div>
         </div>
+        <p class="card-text text-center">
+          <small class="text-muted"><a href="index.php?p=select_chat" class="btn btn-lg btn-success tombol">Lihat Dokter
+              Lainnya</a>
+          </small>
+        </p>
       </div>
       <!-- Akhir Dokter -->

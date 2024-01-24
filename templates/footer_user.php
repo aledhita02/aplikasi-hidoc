@@ -3,114 +3,141 @@
 </div>
 <!-- Footer -->
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="mt-5" id="footer">
-  <!-- Footer -->
-  <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-between p-4 text-white" style="background-color: #21D192">
-      <!-- Left -->
-      <div class="ms-5 foot-tentang">
-        <span>Tentang Kami</span>
-      </div>
-      <!-- Left -->
+<?php
+// Selain dari halaman select_chat_blank tidak menampilkan footer
 
-      <!-- Right -->
-      <div>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="text-white me-4">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Links  -->
-    <section class="bg-light">
-      <div class="container  bg-light text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold">HiDoc</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto bg-success" style="width: 60px; background-color: #7c4dff; height: 2px" />
-            <p>
-              Hidoc, solusi kesehatan digital yang lengkap dan terjangkau, memungkinkan Anda untuk mengakses layanan
-              kesehatan berkualitas tanpa perlu meninggalkan rumah.
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Products</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto bg-success" style="width: 60px; background-color: #7c4dff; height: 2px" />
-            <p>
-              <a href="#!" class="text-dark">Chat Dokter</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">Artikel Kesehatan</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Useful links</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto bg-success" style="width: 60px; background-color: #7c4dff; height: 2px" />
-            <p>
-              <a href="#!" class="text-dark">Blog</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">FAQ</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">Kebijakan Privasi</a>
-            </p>
-            <p>
-              <a href="#!" class="text-dark">S&K</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold">Contact</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto bg-success" style="width: 60px; background-color: #7c4dff; height: 2px" />
-            <p><i class="fas fa-home mr-3"></i> Bekasi,Jati Asih, BKS-17426</p>
-            <p><i class="fas fa-envelope mr-3"></i> HiDoc@mail.com</p>
-            <p><i class="fas fa-phone mr-3"></i> + 62 888 566 777</p>
-            <p><i class="fas fa-print mr-3"></i> + 62 213 567 831</p>
-          </div>
-          <!-- Grid column -->
+if ($page != 'select_chat_blank' && $page != 'select_chat_blank_history'):
+  ?>
+  <div class="mt-5" id="footer">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-between p-4 text-white" style="background-color: #21D192">
+        <!-- Left -->
+        <div class="ms-5 foot-tentang">
+          <span>Tentang Kami</span>
         </div>
-        <!-- Grid row -->
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="bg-light">
+        <div class="container  bg-light text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold">HiDoc</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto bg-success"
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <p>
+                Hidoc, solusi kesehatan digital yang lengkap dan terjangkau, memungkinkan Anda untuk mengakses layanan
+                kesehatan berkualitas tanpa perlu meninggalkan rumah.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Products</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto bg-success"
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <p>
+                <a href="#!" class="text-dark">Chat Dokter</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Artikel Kesehatan</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto bg-success"
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <p>
+                <a href="#!" class="text-dark">Blog</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">FAQ</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">Kebijakan Privasi</a>
+              </p>
+              <p>
+                <a href="#!" class="text-dark">S&K</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto bg-success"
+                style="width: 60px; background-color: #7c4dff; height: 2px" />
+              <p><i class="fas fa-home mr-3"></i> Bekasi,Jati Asih, BKS-17426</p>
+              <p><i class="fas fa-envelope mr-3"></i> HiDoc@mail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 62 888 566 777</p>
+              <p><i class="fas fa-print mr-3"></i> + 62 213 567 831</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3 bg-success text-white">
+        ©HIDOC - COPYRIGHT 2023
+
       </div>
-    </section>
-    <!-- Section: Links  -->
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
-    <!-- Copyright -->
-    <div class="text-center p-3 bg-success text-white">
-      ©HIDOC - COPYRIGHT 2023
-
+  </div>
+  <?php
+else: ?>
+  <footer class="footer bg-success text-white">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <script>document.write(new Date().getFullYear())</script> © <b>HIDOC</b>.
+        </div>
+        <div class="col-sm-6">
+          <div class="text-sm-end d-none d-sm-block">
+            Design & Develop by <a href="#!" class="text-decoration-underline text-white">HI-DOC</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Copyright -->
   </footer>
-  <!-- Footer -->
+<?php endif ?>
 
-</div>
 </div>
 </div>
 <!-- End of .container -->
@@ -192,6 +219,30 @@
             id="signup-phone" type="tel" placeholder="Telepon">
           <span class="cd-signin-modal__error">Error message here!</span>
         </p>
+        <p class="cd-signin-modal__fieldset">
+          <label class="cd-signin-modal__label cd-signin-modal__label--username cd-signin-modal__label--image-replace"
+            for="signup-username">Nama</label>
+          <input type="date" name="date"
+            class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border"
+            id="signup-date"><span class="cd-signin-modal__error">Error message here!</span>
+        </p>
+
+
+        <p class="cd-signin-modal__fieldset">
+          <label for="recipient-name" class="col-form-label">Jenis Kelamin:</label><br />
+        <div class="form-check-inline">
+          <input type="radio" id="signup-jk" value="Laki-Laki" name="jk" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Laki - Laki
+          </label>
+
+        </div>
+        <div class="form-check-inline">
+          <input class="form-check-input" type="radio" id="signup-jk" value="Perempuan" name="jk">
+          <label class="form-check-label" for="exampleRadios2">
+            Perempuan
+          </label>
+        </div>
 
         <p class="cd-signin-modal__fieldset">
           <label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace"
@@ -256,12 +307,6 @@
 <script src="jslogin/main.js"></script> <!-- Resource JavaScript -->
 
 <script src="myjs.js"></script>
-
-
-
-
-
-
 
 
 

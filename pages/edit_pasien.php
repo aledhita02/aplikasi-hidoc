@@ -19,8 +19,13 @@
 						<p class="p_class">
 							<?php if ($_SESSION['tgl_lahir'] == ""): ?>
 								<?php echo "Belum Diisi" ?>
-							<?php else: ?>
-								<?= $_SESSION['tgl_lahir'] ?>
+							<?php else: // Ambil nilai tanggal dari sesi
+									$tgl_lahir = $_SESSION['tgl_lahir'];
+
+									// Konversi format menggunakan fungsi date
+									$tgl_formatted = date("d F Y", strtotime($tgl_lahir)); ?>
+
+								<?= $tgl_formatted ?>
 							<?php endif; ?>
 
 						</p><br />

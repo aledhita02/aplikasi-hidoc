@@ -72,7 +72,7 @@ function formatTanggalDanWaktu($tanggalWaktu)
 
           <!-- <form action="cari_pasien.php" method="get"> -->
           <input class="form-control mr-sm-2 kotak-chat" name="search" type="search" placeholder="Cari Pasien..."
-            autofocus aria-label="Search" id="keyword">
+            autofocus aria-label="Search" id="keyword2">
           <!-- <button type="submit">Cari</button> -->
           <!-- </form> -->
 
@@ -83,7 +83,7 @@ function formatTanggalDanWaktu($tanggalWaktu)
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" id="konten2">
         <div class="col-4 kotak-list-chat">
           <!-- LIST ORANG -->
 
@@ -186,7 +186,7 @@ function formatTanggalDanWaktu($tanggalWaktu)
                         <div class="kotak-chat-kanan">
                           <img src="<?= $row['foto_user'] ?>" class="ava float-right">
                           <video width="400" height="auto" class="float-right" controls>
-                            <source src="../<?= $row['pesan_attachment'] ?>" type="video/mp4">
+                            <source src="<?= $row['pesan_attachment'] ?>" type="video/mp4">
                             Your browser does not support the video tag.
                           </video>
                           <p class="time-chat">
@@ -325,14 +325,15 @@ function formatTanggalDanWaktu($tanggalWaktu)
 <!-- <script src="jquery/jquery-1.11.3.min.js"></script> -->
 <!-- <script src="jquery/jquery-3.3.1.min.new.js"></script> -->
 
-
+<script src="js/cariChat.js"></script>
 <script type="text/javascript">
 
+
   // function updateChat(){
-  //  $.ajax({url:"../js/chatDokterUpdate.php",
-  //      success: function(result){
-  //        $("#isichat").html(result);
-  //  }});
+  // $.ajax({url:"../js/chatDokterUpdate.php",
+  // success: function(result){
+  // $("#isichat").html(result);
+  // }});
   // }
 
   $(document).ready(function () {
@@ -347,53 +348,53 @@ function formatTanggalDanWaktu($tanggalWaktu)
 
   });
 
-    // function send_chat(){
-    //   var id_konsul = $("#id_konsul").val();
-    //   var id_user =  $("#id_user").val();
-    //   var pesan =  $("#pesan").val();
-    //   console.log(id_konsul);
-    //   console.log("hehe");
-    //
-    //  // $.post('process/pesan/tambahPesanDokter_proses.php', {pesan:pesan, id_konsul:id_konsul, id_user:id_user},
-    //   // function(result){
-    //   //   $("input#pesan").val("");
-    //  //  alert(result);
-    //  // });
-    //
-    //   $.ajax({
-    //         url:"process/pesan/tambahPesanDokter_proses.php",
-    //         type:"POST",
-    //         success:function(d){
-    //           alert(d);
-    //         }
-    //       });
-    // }
+// function send_chat(){
+// var id_konsul = $("#id_konsul").val();
+// var id_user = $("#id_user").val();
+// var pesan = $("#pesan").val();
+// console.log(id_konsul);
+// console.log("hehe");
+//
+// // $.post('process/pesan/tambahPesanDokter_proses.php', {pesan:pesan, id_konsul:id_konsul, id_user:id_user},
+// // function(result){
+// // $("input#pesan").val("");
+// // alert(result);
+// // });
+//
+// $.ajax({
+// url:"process/pesan/tambahPesanDokter_proses.php",
+// type:"POST",
+// success:function(d){
+// alert(d);
+// }
+// });
+// }
 
-    // $.ajax({
-    //   url: "process/pesan/test.php",
-    //   type: "POST",
-    //   success: function(d){
-    //     alert(d);
-    //     console.log("debug3");
-    //   }
-    // });
+// $.ajax({
+// url: "process/pesan/test.php",
+// type: "POST",
+// success: function(d){
+// alert(d);
+// console.log("debug3");
+// }
+// });
 
 // $(function(){
 
-  // $("#sendchat").click(function(){
-  //   console.log("debug1");
-  //   $.ajax({
-  //     url: "process/pesan/test.php",
-  //     type: "POST",
-  //     success: function(d){
-  //       alert(d);
-  //       console.log("debug3");
-  //     }
-  //   });
-  //   console.log("debug2");
-  //   // send_chat();
-  //   // alert("cek");
-  // });
+// $("#sendchat").click(function(){
+// console.log("debug1");
+// $.ajax({
+// url: "process/pesan/test.php",
+// type: "POST",
+// success: function(d){
+// alert(d);
+// console.log("debug3");
+// }
+// });
+// console.log("debug2");
+// // send_chat();
+// // alert("cek");
+// });
 
 // });
 
@@ -401,81 +402,81 @@ function formatTanggalDanWaktu($tanggalWaktu)
 
 
 
-    // $(document).ready(function(){
-    //   $('form').on('submit',function(e){
-    //
-    //
-    //     e.preventDefault();
-    //     // alert("Success");
-    //     $.ajax({
-    //       type:$(this).attr('method'),
-    //       url:$(this).attr('action'),
-    //       data:$(this).serialize(),
-    //       success:function(){
-    //         alert("Pesan Terkirim");
-    //       }
-    //     });
-    //   });
-    // });
+// $(document).ready(function(){
+// $('form').on('submit',function(e){
+//
+//
+// e.preventDefault();
+// // alert("Success");
+// $.ajax({
+// type:$(this).attr('method'),
+// url:$(this).attr('action'),
+// data:$(this).serialize(),
+// success:function(){
+// alert("Pesan Terkirim");
+// }
+// });
+// });
+// });
 
-    //coba 1
-      // $(document).ready(function(){
-      //   $("#sendchat").click(function(){
-      //     $.ajax({
-      //       url:"process/pesan/tambahPesanDokter_proses.php",
-      //       type:"POST",
-      //       data:$("#frm").serialize(),
-      //       success:function(d){
-      //         alert(d);
-      //       }
-      //     });
-      //   });
-      // });
+//coba 1
+// $(document).ready(function(){
+// $("#sendchat").click(function(){
+// $.ajax({
+// url:"process/pesan/tambahPesanDokter_proses.php",
+// type:"POST",
+// data:$("#frm").serialize(),
+// success:function(d){
+// alert(d);
+// }
+// });
+// });
+// });
 
-      //coba 2
-    // $( "#tomboluser" ).click(function() {
-    //   id_konsul = $("#id_konsul").val() ;
-    //   alert( id_konsul );
-    // });
-
-
-    // coba 3
-    // $(document).ready(function(){
-    //   $( "#sendchat" ).click(function() {
-    //       var id_konsul = $("#id_konsul").val();
-    //       var id_user =  $("#id_user").val();
-    //       var pesan =  $("#pesan").val();
-    //       $.ajax({
-    //         url:"process/pesan/tambahPesanDokter_proses.php",
-    //         data: {isi:pesan,konsul:id_konsul,user:id_user},
-    //         method: "POST",
-    //         success: function(){
-    //           alert("Pesan Terkirim");
-    //         }
-    //       });
-
-        // $.ajax({
-        //   type:"POST";
-        //   url:"process/pesan/tambahPesanDokter_proses.php",
-        //   data: "isi="+pesan+"&konsul="+id_konsul+"&user="+id_user,
-        //   success: function(msg){
-        //     alert("Pesan Terkirim");
-        //   }
-        // });
+//coba 2
+// $( "#tomboluser" ).click(function() {
+// id_konsul = $("#id_konsul").val() ;
+// alert( id_konsul );
+// });
 
 
+// coba 3
+// $(document).ready(function(){
+// $( "#sendchat" ).click(function() {
+// var id_konsul = $("#id_konsul").val();
+// var id_user = $("#id_user").val();
+// var pesan = $("#pesan").val();
+// $.ajax({
+// url:"process/pesan/tambahPesanDokter_proses.php",
+// data: {isi:pesan,konsul:id_konsul,user:id_user},
+// method: "POST",
+// success: function(){
+// alert("Pesan Terkirim");
+// }
+// });
 
-    //
-    //     $.post( "process/pesan/tambahPesanDokter_proses.php", {isi:pesan,konsul:id_konsul,user:id_user} );
-    //     // $.post('process/pesan/tambahPesanDokter_proses.php',{isi:pesan, konsul:id_konsul, user:id_user}, function(){
-    //     //   $("#id_konsul").val("");
-    //     //   $("#id_user").val("");
-    //     //    $("#pesan").val("");
-    //     //    alert("Pesan Terkirim");
-    //     // });
-    //
-    //   });
-    // });
+// $.ajax({
+// type:"POST";
+// url:"process/pesan/tambahPesanDokter_proses.php",
+// data: "isi="+pesan+"&konsul="+id_konsul+"&user="+id_user,
+// success: function(msg){
+// alert("Pesan Terkirim");
+// }
+// });
+
+
+
+//
+// $.post( "process/pesan/tambahPesanDokter_proses.php", {isi:pesan,konsul:id_konsul,user:id_user} );
+// // $.post('process/pesan/tambahPesanDokter_proses.php',{isi:pesan, konsul:id_konsul, user:id_user}, function(){
+// // $("#id_konsul").val("");
+// // $("#id_user").val("");
+// // $("#pesan").val("");
+// // alert("Pesan Terkirim");
+// // });
+//
+// });
+// });
 
 
 

@@ -18,7 +18,7 @@ $tampilKonsul = $konsul->tampilKonsulDokterByIdPending($id);
             <div class="page-title-right">
               <ol class="breadcrumb m-0">
                 <li class="breadcrumb-item"><a href="javascript: void(0);">Konsultasi</a></li>
-                <li class="breadcrumb-item active">Antrian Konsultasi</li>
+                <li class="breadcrumb-item active">Antrian Pasien</li>
               </ol>
             </div>
 
